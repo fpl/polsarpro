@@ -7,8 +7,8 @@ cd Soft
 chmod +x Compil_PolSARpro_Biomass_Edition_Linux.sh
 ./Compil_PolSARpro_Biomass_Edition_Linux.sh
 cd ..
-rm -r Soft/src
-rm Soft/Compil_PolSARpro_Biomass_Edition_Linux.sh
+#rm -r Soft/src
+#rm Soft/Compil_PolSARpro_Biomass_Edition_Linux.sh
 chmod +x -R Soft/bin/*
 
 echo ""
