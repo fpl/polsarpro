@@ -12311,7 +12311,7 @@ if {$CSKDumpArg == "A"} {
             }
         append CSKDumpCmd "\x22"
         } else {
-        append CSKDumpExe "h5dump_linux.exe"
+        set CSKDumpExe "/usr/bin/h5dump"
         set CSKDumpCmd "$CSKDumpExe -A \x22$TMPCSKFileInput\x22 > \x22$TMPCSKTmp\x22"
         }
 
@@ -12359,7 +12359,7 @@ if {$CSKDumpArg == "d1"} {
             }
         append CSKDumpCmd "\x22"
         } else {
-        append CSKDumpExe "h5dump_linux.exe"
+        set CSKDumpExe "/usr/bin/h5dump"
         set CSKDumpCmd "$CSKDumpExe -d \x22/S01/SBI\x22 -b LE -o \x22TMPCSKBinary1\x22 \x22$TMPCSKFileInput\x22 > \x22$TMPCSKTmp\x22"
         }
 
@@ -12407,14 +12407,14 @@ if {$CSKDumpArg == "d2"} {
             }
         append CSKDumpCmd "\x22"
         } else {
-        append CSKDumpExe "h5dump_linux.exe"
+        set CSKDumpExe "/usr/bin/h5dump"
         set CSKDumpCmd "$CSKDumpExe -d \x22/S02/SBI\x22 -b LE -o \x22TMPCSKBinary2\x22 \x22$TMPCSKFileInput\x22 > \x22$TMPCSKTmp\x22"
         }
 
     puts $f $CSKDumpCmd
     puts $f ""
     close $f
-    set taskIdCSK [ open "| \x22$TMPCSKBatchRun\x22" r]
+    set taskIdCSK [ open /usr/bin/"| \x22$TMPCSKBatchRun\x22" r]
 
     WaitUntilCreated $TMPCSKBinary2
     }
@@ -12458,7 +12458,7 @@ if {$CSGDumpArg == "A"} {
             }
         append CSGDumpCmd "\x22"
         } else {
-        append CSGDumpExe "h5dump_linux.exe"
+        set CSGDumpExe "/usr/bin/h5dump"
         set CSGDumpCmd "$CSGDumpExe -A \x22$CSGFileInput\x22 > \x22$TMPCSGTmp\x22"
         }
 
@@ -12510,7 +12510,7 @@ if {$CSGDumpArg == "A"} {
             }
         append CSGDumpCmd "\x22"
         } else {
-        append CSGDumpExe "h5dump_linux.exe"
+        set CSGDumpExe "/usr/bin/h5dump"
         set CSGDumpCmd "$CSGDumpExe -d \x22/S01/IMG\x22 -b LE -o \x22CSGBinary\x22 \x22$CSGFileInput\x22 > \x22$TMPCSGTmp\x22"
         }
 
@@ -13603,7 +13603,7 @@ if {$InternetConnectResult == 0} {
     if {$PlatFormPSP == "windows"} { 
         set cURLexe "Soft/bin/lib/curl/curl_win64.exe"
         } else {
-        set cURLexe "Soft/bin/lib/curl/curl_linux.exe"
+        set cURLexe "/usr/bin/curl"
         }
     set ProgressLine "0"
     update
