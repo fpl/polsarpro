@@ -34,4 +34,7 @@ The Tcl scripts have been patched to use the system wide tools. Note that the
 Tk GUI have some glitches in use with some workarounds, I eventually could fix them if there was
 enough interest.
 
+I even added a simple shell script `polsarpro.sh` to be run as the preferred way of
+using PolSARPro program.
+
 -- Enjoy
