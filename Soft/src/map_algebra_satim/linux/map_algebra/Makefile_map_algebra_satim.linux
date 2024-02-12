@@ -1,7 +1,7 @@
 
 CC = gcc
 CPP = g++
-CCFLAGS = -w -fcommon
+CCFLAGS = -w -fcommon -O3
 LDFLAGS = -lGLEW -lGL -lGLU -lglut -lfreeimage -lm -fopenmp -pthread
 SOURCES = $(wildcard *.c)
 OBJECTS = $(SOURCES:.c=.o)
