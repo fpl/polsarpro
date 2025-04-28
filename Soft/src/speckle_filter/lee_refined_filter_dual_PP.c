@@ -1,5 +1,5 @@
 /********************************************************************
-PolSARpro v5.0 is free software; you can redistribute it and/or 
+PolSARpro v6.0.4 is free software; you can redistribute it and/or 
 modify it under the terms of the GNU General Public License as 
 published by the Free Software Foundation; either version 2 (1991) of
 the License, or any later version. This program is distributed in the
@@ -11,12 +11,12 @@ See the GNU General Public License (Version 2, 1991) for more details
 
 *********************************************************************
 
-File   : lee_refined_filter_dual_PP.c
+File     : lee_refined_filter_dual_PP.c
 Project  : ESA_POLSARPRO-SATIM
 Authors  : Eric POTTIER, Jacek STRZELCZYK
 Version  : 2.0
 Creation : 07/2015
-Update  :
+Update   :
 *--------------------------------------------------------------------
 INSTITUT D'ELECTRONIQUE et de TELECOMMUNICATIONS de RENNES (I.E.T.R)
 UMR CNRS 6164
@@ -491,7 +491,7 @@ for (Nb = 0; Nb < NbBlock; Nb++) {
 Routine  : make_Coeff
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :  Creates the Filtering Coefficient
 *--------------------------------------------------------------------
@@ -571,7 +571,7 @@ int make_Coeff(float sigma2, int Deplct, int Nnwin, int NwinM1S2,
 Routine  : make_Mask
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :  Creates a set of 8 Nwin*Nwin pixel directional mask
         (0 or 1)

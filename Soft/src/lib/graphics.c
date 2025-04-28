@@ -1,5 +1,5 @@
 /********************************************************************
-PolSARpro v5.0 is free software; you can redistribute it and/or 
+PolSARpro v6.0.4 is free software; you can redistribute it and/or 
 modify it under the terms of the GNU General Public License as 
 published by the Free Software Foundation; either version 2 (1991) of
 the License, or any later version. This program is distributed in the
@@ -11,12 +11,12 @@ See the GNU General Public License (Version 2, 1991) for more details
 
 *********************************************************************
 
-File   : graphics.c
+File     : graphics.c
 Project  : ESA_POLSARPRO
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Version  : 1.0
 Creation : 09/2003
-Update  : 12/2006 (Stephane MERIC)
+Update   : 12/2006 (Stephane MERIC)
 
 *--------------------------------------------------------------------
 INSTITUT D'ELECTRONIQUE et de TELECOMMUNICATIONS de RENNES (I.E.T.R)
@@ -73,7 +73,7 @@ void write_bmp_hdr(int nlig, int ncol, float Max, float Min, int nbytes, char *f
 Routine  : header
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :  Creates and writes a bitmap file header
 *--------------------------------------------------------------------
@@ -162,7 +162,7 @@ void header(int nlig, int ncol, float Max, float Min, FILE * fbmp)
 Routine  : headerTiff
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :  Creates and writes a 24 bit Tiff file header
 *--------------------------------------------------------------------
@@ -196,7 +196,7 @@ void headerTiff(int nlig, int ncol, FILE * fptr)
 Routine  : footerTiff
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :  Creates and writes a 24 bit Tiff file footer
 *--------------------------------------------------------------------
@@ -367,7 +367,7 @@ void footerTiff(short int nlig, short int ncol, FILE * fptr)
 Routine  : colormap
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :  Creates a jet, hsv or gray 256 element colormap
 *--------------------------------------------------------------------
@@ -465,7 +465,7 @@ void colormap(int *red, int *green, int *blue, int comp)
 Routine  : bmp_8bit
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  : 12/2006 (Stephane MERIC)
+Update   : 12/2006 (Stephane MERIC)
 *--------------------------------------------------------------------
 Description :  Creates a 8 bit BMP file
 *--------------------------------------------------------------------
@@ -554,7 +554,7 @@ void bmp_8bit(int nlig, int ncol, float Max, float Min, char *ColorMap, float **
 Routine  : bmp_8bit_char
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :  ReCreates a 8 bit BMP file
 *--------------------------------------------------------------------
@@ -640,7 +640,7 @@ void bmp_8bit_char(int nlig, int ncol, float Max, float Min, char *ColorMap, cha
 Routine  : bmp_24bit
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  : 12/2006 (Stephane MERIC)
+Update   : 12/2006 (Stephane MERIC)
 *--------------------------------------------------------------------
 Description :  Creates a 24 bit BMP file
 *--------------------------------------------------------------------
@@ -742,7 +742,7 @@ void bmp_24bit(int nlig, int ncol, int mapgray, float **DataBmp, char *name)
 Routine  : tiff_24bit
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :  Creates a 24 bit TIFF file
 *--------------------------------------------------------------------
@@ -849,7 +849,7 @@ for (lig = 0; lig < nlig; lig++) {
 Routine  : bmp_training_set
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :  Creates a bitmap file of the training areas
 *--------------------------------------------------------------------
@@ -941,7 +941,7 @@ void bmp_training_set(float **mat, int nlig, int ncol, char *nom, char *ColorMap
 Routine  : bmp_wishart
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :  Creates a bitmap file from a matrix resulting from the wishart
 H / A / Alpha classification
@@ -1027,7 +1027,7 @@ void bmp_wishart(float **mat, int nlig, int ncol, char *nom, char *ColorMap)
 Routine  : bmp_h_alpha
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :  Creates a bitmap file from a matrix resulting from the H-Alpha classification
 *--------------------------------------------------------------------
@@ -1110,7 +1110,7 @@ void bmp_h_alpha(float **mat, int nlig, int ncol, char *name, char *ColorMap)
 Routine  : LoadColormap
 Authors  : Eric POTTIER
 Creation : 07/2011
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :  Creates a 256 element colormap
 *--------------------------------------------------------------------
@@ -3894,7 +3894,7 @@ void write_header_bmp_8bit_mask(int nlig, int ncol, float Max, float Min, char *
 Routine  : write_header_bmp_24bit
 Authors  : Eric POTTIER
 Creation : 07/2011
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :  Creates and writes a 24 bit bitmap file header
 *--------------------------------------------------------------------

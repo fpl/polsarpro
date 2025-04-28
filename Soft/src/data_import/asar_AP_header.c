@@ -1,5 +1,5 @@
 /*******************************************************************************
-PolSARpro v5.0 is free software; you can redistribute it and/or modify it under
+PolSARpro v6.0.4 is free software; you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software
 Foundation; either version 2 (1991) of the License, or any later version.
 This program is distributed in the hope that it will be useful, but WITHOUT ANY
@@ -11,12 +11,12 @@ See the GNU General Public License (Version 2, 1991) for more details.
 ********************************************************************************
 
 
-File   : asar_AP_header.c
+File     : asar_AP_header.c
 Project  : ESA_POLSARPRO
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Version  : 1.2
 Creation : 03/2003
-Update  :
+Update   :
 
 
 *-------------------------------------------------------------------------------
@@ -96,7 +96,7 @@ FILE *fileheader2;
 Routine  : main
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 
 Description :  Read Header of ASAR-AP Files
@@ -218,7 +218,7 @@ int main(int argc, char *argv[])
 Routine  : ReadHEADER_MPH_SPH
 Authors  : Eric POTTIER
 Creation : 11/2003
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Read and Save the MPH and SPH Headers of a ASAR-AP Data File
 *-------------------------------------------------------------------------------
@@ -621,7 +621,7 @@ ReadHEADER_MPH_SPH(FILE * fileinput, FILE * fileoutput, FILE * fileoutput2)
 Routine  : ReadHEADER_SQxADSRs
 Authors  : Eric POTTIER
 Creation : 11/2003
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Read and Save the SQxADSRs Header of a ASAR-AP Data File
 *-------------------------------------------------------------------------------
@@ -868,7 +868,7 @@ void ReadHEADER_SQxADSRs(int channel, int Num_DSR, int RSize)
 Routine  : ReadHEADER_MPP
 Authors  : Eric POTTIER
 Creation : 11/2003
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Read and Save the Main Processing Parameters (MPP) Header of a
 ASAR-AP Data File
@@ -1695,7 +1695,7 @@ void ReadHEADER_MPP(int Num_DSR, int RSize)
 Routine  : ReadHEADER_DCP
 Authors  : Eric POTTIER
 Creation : 11/2003
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Read and Save the Doppler Centroid Parameters (DCP) Header of
 a ASAR-AP Data File
@@ -1804,7 +1804,7 @@ void ReadHEADER_DCP(int Num_DSR, int RSize)
 Routine  : ReadHEADER_CP
 Authors  : Eric POTTIER
 Creation : 11/2003
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Read and Save the Chirp Parameters (DCP) Header of a ASAR-AP
 Data File
@@ -1949,7 +1949,7 @@ void ReadHEADER_CP(int Num_DSR, int RSize)
 Routine  : ReadHEADER_GGA
 Authors  : Eric POTTIER
 Creation : 11/2003
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Read and Save the Geolocation Grid ADSRs (GGA) Header of a
 ASAR-AP Data File
@@ -2119,7 +2119,7 @@ void ReadHEADER_GGA(int Num_DSR, int RSize)
 Routine  : ReadHEADER_SRGR
 Authors  : Eric POTTIER
 Creation : 11/2003
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Read and Save the Slant Range to Ground Range (SRGR) Header of a
 ASAR-AP Data File
@@ -2205,7 +2205,7 @@ void ReadHEADER_SRGR(int Num_DSR, int RSize)
 Routine  : ReadHEADER_AEPxADSRs
 Authors  : Eric POTTIER
 Creation : 11/2003
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Read and Save the Antenna Elevation Pattern (AEPxADSRs) Header of
 a ASAR-AP Data File
@@ -2312,7 +2312,7 @@ void ReadHEADER_AEPxADSRs(int channel, int Num_DSR, int RSize)
 Routine  : ReadHEADER_MPG
 Authors  : Eric POTTIER
 Creation : 11/2003
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Read and Save the Map Projection Gads (MPG) Header of a
 ASAR-AP Data File
@@ -2660,7 +2660,7 @@ void ReadHEADER_MPG(int Num_DSR, int RSize)
 Routine  : Extract_HEADER
 Authors  : Eric POTTIER
 Creation : 11/2003
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Extract Header and save in a temporary file
 *-------------------------------------------------------------------------------
@@ -2692,7 +2692,7 @@ void Extract_HEADER(FILE * fileinput, unsigned int Offset, int RSize)
 Routine  : MJD_Date
 Authors  : Eric POTTIER
 Creation : 06/2004
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Convert Number of Days (MJD2000 Format) in Day:Month:Year
 *-------------------------------------------------------------------------------
@@ -2746,7 +2746,7 @@ void MJD_Date(unsigned int MJD, int *Day, int *Month, int *Year)
 Routine  : MJD_Time
 Authors  : Eric POTTIER
 Creation : 06/2004
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Convert Number of Seconds (MJD2000 Format) in Hour:Minute:Second
 *-------------------------------------------------------------------------------

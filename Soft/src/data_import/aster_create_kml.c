@@ -26,7 +26,7 @@ FILE *filename;
 Routine  : main
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 11/2008
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 
 Description :  Create a Google Kml File

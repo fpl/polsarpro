@@ -1,5 +1,5 @@
 /********************************************************************
-PolSARpro v5.0 is free software; you can redistribute it and/or 
+PolSARpro v6.0.4 is free software; you can redistribute it and/or 
 modify it under the terms of the GNU General Public License as 
 published by the Free Software Foundation; either version 2 (1991) of
 the License, or any later version. This program is distributed in the
@@ -11,12 +11,12 @@ See the GNU General Public License (Version 2, 1991) for more details
 
 *********************************************************************
 
-File   : util_block.c
+File     : util_block.c
 Project  : ESA_POLSARPRO
 Authors  : Eric POTTIER
 Version  : 1.0
 Creation : 08/2010
-Update  : 
+Update   : 
 
 *--------------------------------------------------------------------
 INSTITUT D'ELECTRONIQUE et de TELECOMMUNICATIONS de RENNES (I.E.T.R)
@@ -96,7 +96,7 @@ int average_TCI(float ***M_in, float **Valid, int NNpolar, float **M_avg, int li
 Routine  : read_matrix_int
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : read a binary (int) file
 ********************************************************************/
@@ -135,7 +135,7 @@ int read_matrix_int(char *file_name, int **M_in, int NNlig, int NNcol, int NNwin
 Routine  : read_matrix_float
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : read a binary (float) file
 ********************************************************************/
@@ -174,7 +174,7 @@ int read_matrix_float(char *file_name, float **M_in, int NNlig, int NNcol, int N
 Routine  : read_matrix_cmplx
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : read a binary (complex) file
 ********************************************************************/
@@ -213,7 +213,7 @@ int read_matrix_cmplx(char *file_name, float **M_in, int NNlig, int NNcol, int N
 Routine  : write_matrix_int
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : write a binary (int) file
 ********************************************************************/
@@ -242,7 +242,7 @@ int write_matrix_int(char *file_name, int **M_out, int NNlig, int NNcol, int OOf
 Routine  : write_matrix_float
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : write a binary (float) file
 ********************************************************************/
@@ -271,7 +271,7 @@ int write_matrix_float(char *file_name, float **M_out, int NNlig, int NNcol, int
 Routine  : write_matrix_cmplx
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : write a binary (complex) file
 ********************************************************************/
@@ -300,7 +300,7 @@ int write_matrix_cmplx(char *file_name, float **M_out, int NNlig, int NNcol, int
 Routine  : read_matrix3d_float
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : read a binary (float) file
 ********************************************************************/
@@ -341,7 +341,7 @@ for (Np = 0; Np < NNpolar; Np++) {
 Routine  : read_matrix3d_cmplx
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : read a binary (complex) file
 ********************************************************************/
@@ -382,7 +382,7 @@ for (Np = 0; Np < NNpolar; Np++) {
 Routine  : write_matrix3d_float
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : write a binary (float) file
 ********************************************************************/
@@ -414,7 +414,7 @@ for (Np = 0; Np < NNpolar; Np++) {
 Routine  : write_matrix3d_cmplx
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : write a binary (complex) file
 ********************************************************************/
@@ -446,7 +446,7 @@ for (Np = 0; Np < NNpolar; Np++) {
 Routine  : read_block_matrix_int
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : read a block of a binary (int) file
 ********************************************************************/
@@ -512,7 +512,7 @@ int read_block_matrix_int(FILE *in_file, int **M_in, int NNblock, int NNbBlock, 
 Routine  : read_block_matrix_float
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : read a block of a binary (float) file
 ********************************************************************/
@@ -578,7 +578,7 @@ int read_block_matrix_float(FILE *in_file, float **M_in, int NNblock, int NNbBlo
 Routine  : read_block_matrix_matrix3d_float
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : read a block of a binary (float) file
 ********************************************************************/
@@ -644,7 +644,7 @@ int read_block_matrix_matrix3d_float(FILE *in_file, float ***M_in, int NNp, int 
 Routine  : read_block_matrix_cmplx
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : read a block of a binary (complex) file
 ********************************************************************/
@@ -718,7 +718,7 @@ int read_block_matrix_cmplx(FILE *in_file, float **M_in, int NNblock, int NNbBlo
 Routine  : write_block_matrix_int
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : write a block of binary (int) file
 ********************************************************************/
@@ -741,7 +741,7 @@ int write_block_matrix_int(FILE *out_file, int **M_out, int Sub_NNlig, int Sub_N
 Routine  : write_block_matrix_float
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : write a block of binary (float) file
 ********************************************************************/
@@ -764,7 +764,7 @@ int write_block_matrix_float(FILE *out_file, float **M_out, int Sub_NNlig, int S
 Routine  : write_block_matrix_matrix3d_float
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : write a block of binary (float) file
 ********************************************************************/
@@ -787,7 +787,7 @@ int write_block_matrix_matrix3d_float(FILE *out_file, float ***M_out, int NNp, i
 Routine  : write_block_matrix_cmplx
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : write a block of binary (complex) file
 ********************************************************************/
@@ -810,7 +810,7 @@ int write_block_matrix_cmplx(FILE *out_file, float **M_out, int Sub_NNlig, int S
 Routine  : write_block_matrix3d_float
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : write a block of binary (float) file
 ********************************************************************/
@@ -838,7 +838,7 @@ for (Np = 0; Np < NNpolar; Np++) {
 Routine  : write_block_matrix3d_cmplx
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : write a block of binary (complex) file
 ********************************************************************/
@@ -866,7 +866,7 @@ for (Np = 0; Np < NNpolar; Np++) {
 Routine  : read_block_S2_avg
 Authors  : Eric POTTIER
 Creation : 08/2010
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : Read S2 Sinclair matrix and apply a spatial averaging
 ********************************************************************/
@@ -1385,7 +1385,7 @@ int read_block_S2_avg(FILE *datafile[], float ***M_out, char *PolType, int NNpol
 Routine  : read_block_S2_noavg
 Authors  : Eric POTTIER
 Creation : 08/2010
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : Read S2 Sinclair matrix without applying a spatial
         averaging
@@ -1819,7 +1819,7 @@ int read_block_S2_noavg(FILE *datafile[], float ***M_out, char *PolType, int NNp
 Routine  : read_block_SPP_avg
 Authors  : Eric POTTIER
 Creation : 08/2010
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : Read SPP Partial Sinclair matrix and apply a spatial
         averaging
@@ -2057,7 +2057,7 @@ int read_block_SPP_avg(FILE *datafile[], float ***M_out, char *PolType, int NNpo
 Routine  : read_block_SPP_noavg
 Authors  : Eric POTTIER
 Creation : 08/2010
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : Read SPP Partial Sinclair matrix
         without applying a spatial averaging
@@ -2264,7 +2264,7 @@ int read_block_SPP_noavg(FILE *datafile[], float ***M_out, char *PolType, int NN
 Routine  : read_block_TCI_avg
 Authors  : Eric POTTIER
 Creation : 08/2010
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : Read T Coherency, C Covariance or I Intensity matrix
         and apply a spatial averaging
@@ -2372,7 +2372,7 @@ int read_block_TCI_avg(FILE *datafile[], float ***M_out, int NNpolar, int NNbloc
 Routine  : read_block_TCI_noavg
 Authors  : Eric POTTIER
 Creation : 08/2010
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : Read T Coherency, C Covariance or I Intensity matrix
         without applying a spatial averaging
@@ -2444,7 +2444,7 @@ int read_block_TCI_noavg(FILE *datafile[], float ***M_out, int NNpolar, int NNbl
 Routine  : read_block_S2_TCIelt_noavg
 Authors  : Eric POTTIER
 Creation : 08/2010
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : Read S2 Sinclair matrix without applying a spatial
         averaging
@@ -2763,7 +2763,7 @@ int read_block_S2_TCIelt_noavg(FILE *datafile[], float **M_out, char *PolType, i
 Routine  : read_block_SPP_TCIelt_noavg
 Authors  : Eric POTTIER
 Creation : 08/2010
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : Read SPP Partial Sinclair matrix
         without applying a spatial averaging
@@ -2909,7 +2909,7 @@ int read_block_SPP_TCIelt_noavg(FILE *datafile[], float **M_out, char *PolType, 
 Routine  : read_block_S2T6_avg
 Authors  : Eric POTTIER
 Creation : 08/2010
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : Read S2 Sinclair matrix and apply a spatial averaging
 ********************************************************************/
@@ -3175,7 +3175,7 @@ int read_block_S2T6_avg(FILE *datafile1[], FILE *datafile2[], float ***M_out, in
 Routine  : average_TCI
 Authors  : Eric POTTIER
 Creation : 08/2015
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : Apply a spatial averaging on one line of a TCI matrix
 ********************************************************************/

@@ -1,5 +1,5 @@
 /***********************************************************************
-PolSARpro v5.0 is free software; you can redistribute it and/or modify 
+PolSARpro v6.0.4 is free software; you can redistribute it and/or modify 
 it under the terms of the GNU General Public License as published by the
 Free Software Foundation; either version 2 (1991) of the License, or any
 later version. This program is distributed in the hope that it will be 
@@ -10,12 +10,12 @@ See the GNU General Public License (Version 2, 1991) for more details.
 
 ************************************************************************
 
-File   : PolSARproLib.c
+File     : PolSARproLib.c
 Project  : ESA_POLSARPRO
 Authors  : Eric POTTIER
 Version  : 1.0
 Creation : 08/2010
-Update  : 
+Update   : 
 
 *-----------------------------------------------------------------------
 INSTITUT D'ELECTRONIQUE et de TELECOMMUNICATIONS de RENNES (I.E.T.R)

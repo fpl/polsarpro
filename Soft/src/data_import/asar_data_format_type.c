@@ -1,5 +1,5 @@
 /*******************************************************************************
-PolSARpro v5.0 is free software; you can redistribute it and/or modify it under
+PolSARpro v6.0.4 is free software; you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software
 Foundation; either version 2 (1991) of the License, or any later version.
 This program is distributed in the hope that it will be useful, but WITHOUT ANY
@@ -11,12 +11,12 @@ See the GNU General Public License (Version 2, 1991) for more details.
 ********************************************************************************
 
 
-File   : asar_data_format_type.c
+File     : asar_data_format_type.c
 Project  : ESA_POLSARPRO
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Version  : 2.0
 Creation : 01/2004
-Update  :
+Update   :
 
 
 *-------------------------------------------------------------------------------
@@ -75,7 +75,7 @@ FILE *fileheader;
 Routine  : main
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2004
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 
 Description :  Read ASAR Data Format Type from Header

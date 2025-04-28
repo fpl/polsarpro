@@ -1,5 +1,5 @@
 /*******************************************************************************
-PolSARpro v5.0 is free software; you can redistribute it and/or modify it under
+PolSARpro v6.0.4 is free software; you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software
 Foundation; either version 2 (1991) of the License, or any later version.
 This program is distributed in the hope that it will be useful, but WITHOUT ANY
@@ -10,12 +10,12 @@ See the GNU General Public License (Version 2, 1991) for more details.
 
 ********************************************************************************
 
-File  : optimal_coherences_classifier.c
+File     : optimal_coherences_classifier.c
 Project  : ESA_POLSARPRO
 Authors  : Laurent FERRO-FAMIL
 Version  : 1.0
 Creation : 12/2006
-Update  : 12/2006 (Stephane MERIC)
+Update   : 12/2006 (Stephane MERIC)
 
 *-------------------------------------------------------------------------------
 INSTITUT D'ELECTRONIQUE et de TELECOMMUNICATIONS de RENNES (I.E.T.R)
@@ -100,7 +100,7 @@ void bmp_24bit_opt_coh(float **mat_ch1,float **mat_ch2,float **mat_ch3, int li,i
 Routine  : main
 Authors  : Laurent FERRO-FAMIL
 Creation : 12/2006
-Update  : 12/2006 (Stephane MERIC)
+Update   : 12/2006 (Stephane MERIC)
 *-------------------------------------------------------------------------------
 Description :  Unsupervised classification of the complex optimal coherences
 
@@ -326,7 +326,7 @@ int main(int argc, char *argv[])
 Routine  : bmp_occ_pl
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Creates a bitmap file from an occurence matrix resulting from a polar
 plane segmentation. Draws the class boundaries
@@ -434,7 +434,7 @@ void bmp_occ_pl(float **mat, int li, int co, char *cmap, char *nom)
 Routine  : bmp_seg_pl
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Creates a bitmap file from a matrix resulting from a polar
 plane segmentation. Draws the class boundaries
@@ -533,7 +533,7 @@ void bmp_seg_pl(float **mat, int li, int co, char *name, char *ColorMap)
 Routine  : define_borders
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Creates decision boundaries in a polar plane
 *-------------------------------------------------------------------------------
@@ -570,7 +570,7 @@ void define_borders(float **border_im, int nlig, int ncol)
 Routine  : bmp_24bit_opt_coh
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 12/2006
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Creates a 24 bit BMP Image using the Optimal Coherences
 *-------------------------------------------------------------------------------

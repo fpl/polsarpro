@@ -1,5 +1,5 @@
 /********************************************************************
-PolSARpro v5.0 is free software; you can redistribute it and/or 
+PolSARpro v6.0.4 is free software; you can redistribute it and/or 
 modify it under the terms of the GNU General Public License as 
 published by the Free Software Foundation; either version 2 (1991) of
 the License, or any later version. This program is distributed in the
@@ -11,12 +11,12 @@ See the GNU General Public License (Version 2, 1991) for more details
 
 *********************************************************************
 
-File   : loci_cmplx_plane_extract_T6.c
+File     : loci_cmplx_plane_extract_T6.c
 Project  : ESA_POLSARPRO
 Authors  : Eric POTTIER
 Version  : 1.0
 Creation : 08/2012
-Update  :
+Update   :
 *--------------------------------------------------------------------
 INSTITUT D'ELECTRONIQUE et de TELECOMMUNICATIONS de RENNES (I.E.T.R)
 UMR CNRS 6164
@@ -336,7 +336,7 @@ return 1;
   Routine  : FilePointerPosition
   Authors  : Eric POTTIER
   Creation : 12/2006
-  Update  :
+  Update   :
 *--------------------------------------------------------------------
   Description :  Update the Pointer position of the data files
 *--------------------------------------------------------------------
@@ -367,7 +367,7 @@ for (np=0; np < 36; np++) my_fseek_position(in_fileT[np], PointerPosition);
   Routine  : ExtractData
   Authors  : Eric POTTIER, Laurent FERRO-FAMIL
   Creation : 12/2006
-  Update  :
+  Update   :
 *--------------------------------------------------------------------
   Description :  Extract data
 *--------------------------------------------------------------------
@@ -415,7 +415,7 @@ free_vector_float(Tmp);
   Routine  : ProcessDataLoci
   Authors  : Eric POTTIER, Laurent FERRO-FAMIL
   Creation : 12/2006
-  Update  :
+  Update   :
 *--------------------------------------------------------------------
   Description :  Process data
 *--------------------------------------------------------------------
@@ -572,7 +572,7 @@ cplx_free_matrix(hV,3);
   Routine  : ProcessDataTriplet
   Authors  : Eric POTTIER, Laurent FERRO-FAMIL
   Creation : 12/2006
-  Update  :
+  Update   :
 *--------------------------------------------------------------------
   Description :  Process data
 *--------------------------------------------------------------------

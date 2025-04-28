@@ -1,5 +1,5 @@
 /********************************************************************
-PolSARpro v5.0 is free software; you can redistribute it and/or 
+PolSARpro v6.0.4 is free software; you can redistribute it and/or 
 modify it under the terms of the GNU General Public License as 
 published by the Free Software Foundation; either version 2 (1991) of
 the License, or any later version. This program is distributed in the
@@ -11,12 +11,12 @@ See the GNU General Public License (Version 2, 1991) for more details
 
 *********************************************************************
 
-File   : CS_entropy_intensity.c
+File     : CS_entropy_intensity.c
 Project  : ESA_POLSARPRO-SATIM
 Authors  : Maciej Dwornik
 Version  : 2.0
 Creation : 08/2015, 08/2016
-Update  :
+Update   :
 *--------------------------------------------------------------------
 e-mail : dwornik@geol.agh.edu.pl
 *--------------------------------------------------------------------

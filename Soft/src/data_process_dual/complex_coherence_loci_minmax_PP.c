@@ -1,5 +1,5 @@
 /********************************************************************
-PolSARpro v5.0 is free software; you can redistribute it and/or 
+PolSARpro v6.0.4 is free software; you can redistribute it and/or 
 modify it under the terms of the GNU General Public License as 
 published by the Free Software Foundation; either version 2 (1991) of
 the License, or any later version. This program is distributed in the
@@ -11,13 +11,13 @@ See the GNU General Public License (Version 2, 1991) for more details
 
 *********************************************************************
 
-File   : complex_coherence_loci_minmax_PP.c
+File     : complex_coherence_loci_minmax_PP.c
 Project  : ESA_POLSARPRO-SATIM
 Authors  : Eric POTTIER, Marco LAVALLE, Jacek STRZELCZYK
 Modified : Marco Lavalle
 Version  : 3.0
 Creation : 1/2008
-Update  : 8/2012, 7/2015
+Update   : 8/2012, 7/2015
 *--------------------------------------------------------------------
 INSTITUT D'ELECTRONIQUE et de TELECOMMUNICATIONS de RENNES (I.E.T.R)
 UMR CNRS 6164

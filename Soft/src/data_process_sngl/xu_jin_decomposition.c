@@ -1,5 +1,5 @@
 /********************************************************************
-PolSARpro v5.0 is free software; you can redistribute it and/or 
+PolSARpro v6.0.4 is free software; you can redistribute it and/or 
 modify it under the terms of the GNU General Public License as 
 published by the Free Software Foundation; either version 2 (1991) of
 the License, or any later version. This program is distributed in the
@@ -16,7 +16,7 @@ Project  : ESA_POLSARPRO-SATIM
 Authors  : Feng XU
 Version  : 1.0
 Creation : 12/2016
-Update  :
+Update   :
 *--------------------------------------------------------------------
 
 Description :  Xu & Jin decomposition

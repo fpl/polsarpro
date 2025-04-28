@@ -1,5 +1,5 @@
 /********************************************************************
-PolSARpro v5.0 is free software; you can redistribute it and/or 
+PolSARpro v6.0.4 is free software; you can redistribute it and/or 
 modify it under the terms of the GNU General Public License as 
 published by the Free Software Foundation; either version 2 (1991) of
 the License, or any later version. This program is distributed in the
@@ -11,12 +11,12 @@ See the GNU General Public License (Version 2, 1991) for more details
 
 *********************************************************************
 
-File  : surface_inversion_oh2004.c
+File     : surface_inversion_oh2004.c
 Project  : ESA_POLSARPRO-SATIM
 Authors  : Eric POTTIER, Yin Qiang (v2.0), Jacek STRZELCZYK
 Version  : 3.0
 Creation : 07/2015
-Update  : 05/2009, 08/2011
+Update   : 05/2009, 08/2011
 *--------------------------------------------------------------------
 INSTITUT D'ELECTRONIQUE et de TELECOMMUNICATIONS de RENNES (I.E.T.R)
 UMR CNRS 6164

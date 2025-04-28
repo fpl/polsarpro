@@ -1,5 +1,5 @@
 /********************************************************************
-PolSARpro v5.0 is free software; you can redistribute it and/or 
+PolSARpro v6.0.4 is free software; you can redistribute it and/or 
 modify it under the terms of the GNU General Public License as 
 published by the Free Software Foundation; either version 2 (1991) of
 the License, or any later version. This program is distributed in the
@@ -11,12 +11,12 @@ See the GNU General Public License (Version 2, 1991) for more details
 
 *********************************************************************
 
-File   : util_convert.c
+File     : util_convert.c
 Project  : ESA_POLSARPRO
 Authors  : Eric POTTIER
 Version  : 1.0
 Creation : 08/2010
-Update  : 
+Update   : 
 
 *--------------------------------------------------------------------
 INSTITUT D'ELECTRONIQUE et de TELECOMMUNICATIONS de RENNES (I.E.T.R)
@@ -106,7 +106,7 @@ int T6_to_C3(float ***M_in, int MasterSlave, int Nlig, int Ncol, int NwinLig, in
 Routine  : S2_to_C3elt
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : create an array of one element of the C3 matrix from
         S2 matrix
@@ -169,7 +169,7 @@ k1r = k1i = k2r = k2i = k3r = k3i = 0.;
 Routine  : S2_to_T3elt
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *-----------------------------------------------------------------------
 Description : create an array of one element of the T3 matrix from
         S2 matrix
@@ -232,7 +232,7 @@ k1r = k1i = k2r = k2i = k3r = k3i = 0.;
 Routine  : S2_to_C4elt
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : create an array of one element of the C4 matrix from
         S2 matrix
@@ -318,7 +318,7 @@ k1r = k1i = k2r = k2i = k3r = k3i = k4r = k4i = 0.;
 Routine  : S2_to_T4elt
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : create an array of one element of the T4 matrix from
         S2 matrix
@@ -404,7 +404,7 @@ k1r = k1i = k2r = k2i = k3r = k3i = k4r = k4i = 0.;
 Routine  : S2_to_T6elt
 Authors  : Eric POTTIER
 Creation : 01/2010
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : create an array of one element of the T6 matrix from
         S2 matrix
@@ -555,7 +555,7 @@ k1r = k1i = k2r = k2i = k3r = k3i = k4r = k4i = k5r = k5i = k6r = k6i = 0.;
 Routine  : SPP_to_C2elt
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : create an array of one element of the C2 matrix from
         SPP matrix
@@ -599,7 +599,7 @@ k1r = k1i = k2r = k2i = 0.;
 Routine  : SPP_to_T2elt
 Authors  : Eric POTTIER
 Creation : 08/2011
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : create an array of one element of the T2 matrix from
         SPP matrix
@@ -643,7 +643,7 @@ k1r = k1i = k2r = k2i = 0.;
 Routine  : S2_to_SPP
 Authors  : Eric POTTIER
 Creation : 03/2010
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : create an array of the SPP matrix from S2 matrix
 ********************************************************************/
@@ -748,7 +748,7 @@ k1r = k1i = k2r = k2i = 0.;
 Routine  : S2_to_IPP
 Authors  : Eric POTTIER
 Creation : 03/2010
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : create an array of the IPP matrix from S2 matrix
 ********************************************************************/
@@ -817,7 +817,7 @@ int S2_to_IPP(float ***S_in, float ***M_in, int pp, int Nlig, int Ncol, int Nwin
 Routine  : S2_to_C2
 Authors  : Eric POTTIER
 Creation : 03/2010
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : create an array of the C2 matrix from S2 matrix
 ********************************************************************/
@@ -939,7 +939,7 @@ k1r = k1i = k2r = k2i = 0.;
 Routine  : S2_to_T2
 Authors  : Eric POTTIER
 Creation : 03/2010
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : create an array of the C2 matrix from S2 matrix
 ********************************************************************/
@@ -1077,7 +1077,7 @@ k1r0 = k1i0 = k2r0 = k2i0 = 0.;
 Routine  : S2_to_C3
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : create an array of the C3 matrix from S2 matrix
 ********************************************************************/
@@ -1119,7 +1119,7 @@ k1r = k1i = k2r = k2i = k3r = k3i = 0.;
 Routine  : S2_to_T3
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : create an array of the T3 matrix from S2 matrix
 ********************************************************************/
@@ -1161,7 +1161,7 @@ k1r = k1i = k2r = k2i = k3r = k3i = 0.;
 Routine  : S2_to_C4
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : create an array of the C4 matrix from S2 matrix
 ********************************************************************/
@@ -1212,7 +1212,7 @@ k1r = k1i = k2r = k2i = k3r = k3i = k4r = k4i = 0.;
 Routine  : S2_to_T4
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : create an array of the T4 matrix from S2 matrix
 ********************************************************************/
@@ -1263,7 +1263,7 @@ k1r = k1i = k2r = k2i = k3r = k3i = k4r = k4i = 0.;
 Routine  : S2_to_T6
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : create an array of the T6 matrix from 2*S2 matrix
 ********************************************************************/
@@ -1339,7 +1339,7 @@ k1r = k1i = k2r = k2i = k3r = k3i = k4r = k4i = k5r = k5i = k6r = k6i = 0.;
 Routine  : SPP_to_C2
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : create an array of the C2 matrix from SPP matrix
 ********************************************************************/
@@ -1373,7 +1373,7 @@ k1r = k1i = k2r = k2i = 0.;
 Routine  : SPP_to_IPP
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : create an array of the IPP matrix from SPP matrix
 ********************************************************************/
@@ -1404,7 +1404,7 @@ k1r = k1i = k2r = k2i = 0.;
 Routine  : C2_to_IPP
 Authors  : Eric POTTIER
 Creation : 03/2010
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : create an array of the IPP matrix from C3 matrix
 ********************************************************************/
@@ -1427,7 +1427,7 @@ int C2_to_IPP(float ***M_in, int Nlig, int Ncol, int NwinLig, int NwinCol)
 Routine  : C4_to_T4
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : create an array of the T4 matrix from C4 matrix
 ********************************************************************/
@@ -1481,7 +1481,7 @@ C22 = C23_re = C23_im = C24_re = C24_im = C33 = C34_re = C34_im = C44 = 0.;
 Routine  : C4_to_C3
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *-------------------------------------------------------------------
 Description : create an array of the C3 matrix from C4 matrix
 ********************************************************************/
@@ -1528,7 +1528,7 @@ C22 = C23_re = C24_re = C24_im = C33 = C34_re = C34_im = C44 = 0.;
 Routine  : C4_to_T3
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : create an array of the T3 matrix from C4 matrix
 ********************************************************************/
@@ -1572,7 +1572,7 @@ C22 = C23_re = C23_im = C33 = 0.;
 Routine  : C4_to_C2
 Authors  : Eric POTTIER
 Creation : 08/2010
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : create an array of the C2 matrix from C4 matrix
 ********************************************************************/
@@ -1649,7 +1649,7 @@ C22 = C23_re = C23_im = C24_re = C24_im = C33 = C34_re = C34_im = C44 = 0.;
 Routine  : C4_to_IPP
 Authors  : Eric POTTIER
 Creation : 03/2010
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : create an array of the IPP matrix from C4 matrix
 ********************************************************************/
@@ -1709,7 +1709,7 @@ int C4_to_IPP(float ***M_in, int pp, int Nlig, int Ncol, int NwinLig, int NwinCo
 Routine  : T4_to_C4
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : create an array of the C4 matrix from T4 matrix
 ********************************************************************/
@@ -1763,7 +1763,7 @@ T22 = T23_re = T23_im = T24_re = T24_im = T33 = T34_re = T34_im = T44 = 0.;
 Routine  : T4_to_C3
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : create an array of the C3 matrix from T4 matrix
 ********************************************************************/
@@ -1805,7 +1805,7 @@ T22 = T23_re = T23_im = T33 = 0.;
 Routine  : T4_to_T3
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : create an array of the T3 matrix from T4 matrix
 ********************************************************************/
@@ -1847,7 +1847,7 @@ T22 = T23_re = T23_im = T33 = 0.;
 Routine  : C3_to_C2
 Authors  : Eric POTTIER
 Creation : 08/2010
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : create an array of the C2 matrix from C3 matrix
 ********************************************************************/
@@ -1918,7 +1918,7 @@ C22 = C23_re = C23_im = C33 = 0.;
 Routine  : C3_to_T3
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : create an array of the T3 matrix from C3 matrix
 ********************************************************************/
@@ -1959,7 +1959,7 @@ C22 = C23_re = C23_im = C33 = 0.;
 Routine  : C3_to_IPP
 Authors  : Eric POTTIER
 Creation : 03/2010
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : create an array of the IPP matrix from C3 matrix
 ********************************************************************/
@@ -2007,7 +2007,7 @@ int C3_to_IPP(float ***M_in, int pp, int Nlig, int Ncol, int NwinLig, int NwinCo
 Routine  : T3_to_C3
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : create an array of the C3 matrix from T3 matrix
 ********************************************************************/
@@ -2049,7 +2049,7 @@ T22 = T23_re = T23_im = T33 = 0.;
 Routine  : T6_to_C3
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : create an array of the C3 matrix from T3 matrix
 ********************************************************************/
@@ -2116,7 +2116,7 @@ T22 = T23_re = T23_im = T33 = 0.;
 Routine  : C2_to_T2
 Authors  : Eric POTTIER
 Creation : 08/2011
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : create an array of the T3 matrix from C3 matrix
 ********************************************************************/
@@ -2147,7 +2147,7 @@ C11 = C12_re = C12_im = C22 = 0.;
 Routine  : T2_to_C2
 Authors  : Eric POTTIER
 Creation : 08/2011
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : create an array of the C3 matrix from T3 matrix
 ********************************************************************/
@@ -2178,7 +2178,7 @@ T11 = T12_re = T12_im = T22 = 0.;
 Routine  : SPP_to_T4
 Authors  : Eric POTTIER
 Creation : 10/2012
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : create an array of the T4 matrix from 2*SPP matrix
 ********************************************************************/

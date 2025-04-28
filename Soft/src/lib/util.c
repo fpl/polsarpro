@@ -1,5 +1,5 @@
 /********************************************************************
-PolSARpro v5.0 is free software; you can redistribute it and/or 
+PolSARpro v6.0.4 is free software; you can redistribute it and/or 
 modify it under the terms of the GNU General Public License as 
 published by the Free Software Foundation; either version 2 (1991) of
 the License, or any later version. This program is distributed in the
@@ -11,12 +11,12 @@ See the GNU General Public License (Version 2, 1991) for more details
 
 *********************************************************************
 
-File   : util.c
+File     : util.c
 Project  : ESA_POLSARPRO
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Version  : 1.0
 Creation : 09/2003
-Update  : 12/2006 (Stephane MERIC)
+Update   : 12/2006 (Stephane MERIC)
 
 *--------------------------------------------------------------------
 INSTITUT D'ELECTRONIQUE et de TELECOMMUNICATIONS de RENNES (I.E.T.R)
@@ -105,7 +105,7 @@ int my_fseek_position(FILE *in_file, long int fseek_position);
 Structure: Create_Pix
 Authors  : Laurent FERRO-FAMIL
 Creation : 07/2003
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :
 ********************************************************************/
@@ -125,7 +125,7 @@ struct Pix *Create_Pix(struct Pix *P, float x, float y)
 Structure: Remove_Pix
 Authors  : Laurent FERRO-FAMIL
 Creation : 07/2003
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :
 ********************************************************************/
@@ -166,7 +166,7 @@ struct Pix *Remove_Pix(struct Pix *P_top, struct Pix *P)
 Routine  : my_round
 Authors  : Laurent FERRO-FAMIL
 Creation : 07/2003
-Update  : 12/2006 (Stephane MERIC)
+Update   : 12/2006 (Stephane MERIC)
 *--------------------------------------------------------------------
 Description : Round function
 ********************************************************************/
@@ -189,7 +189,7 @@ float my_round(float v)
 Routine  : edit_error
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :  Displays an error message and exits the program
 ********************************************************************/
@@ -203,7 +203,7 @@ void edit_error(char *s1, char *s2)
 Routine  : check_file
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :  Checks and corrects slashes in file string
 ********************************************************************/
@@ -224,7 +224,7 @@ void check_file(char *file)
 Routine  : check_dir
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :  Checks and corrects slashes in directory string
 ********************************************************************/
@@ -248,7 +248,7 @@ void check_dir(char *dir)
 Routine  : read_config
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :  Read a configuration file
 ********************************************************************/
@@ -281,7 +281,7 @@ void read_config(char *dir, int *Nlig, int *Ncol, char *PolarCase, char *PolarTy
 Routine  : write_config
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :  Writes a configuration file
 ********************************************************************/
@@ -312,7 +312,7 @@ void write_config(char *dir, int Nlig, int Ncol, char *PolarCase, char *PolarTyp
 Routine  : write_envi_config
 Authors  : Eric POTTIER
 Creation : 04/2017
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :  Writes a ENVI configuration file
 ********************************************************************/
@@ -346,7 +346,7 @@ void write_envi_config(char *file_out, int Nlig, int Ncol, int Type)
 Routine  : my_randomize
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :  Initialisation of the Random generator
 ********************************************************************/
@@ -359,7 +359,7 @@ void my_randomize(void)
 Routine  : my_random
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :  Random value
 ********************************************************************/
@@ -374,7 +374,7 @@ float my_random(float num)
 Routine  : my_eps_random
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :  eps/20 < Random value < 19*eps / 20
 ********************************************************************/
@@ -391,7 +391,7 @@ float my_eps_random(void)
 Routine  : cconj
 Authors  : Laurent FERRO-FAMIL
 Creation : 08/2005
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :  Complex Conjugate
 ********************************************************************/
@@ -409,7 +409,7 @@ cplx cconj(cplx a)
 Routine  : cadd
 Authors  : Laurent FERRO-FAMIL
 Creation : 08/2005
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :  Complex Addition
 ********************************************************************/
@@ -427,7 +427,7 @@ cplx cadd(cplx a,cplx b)
 Routine  : csub
 Authors  : Laurent FERRO-FAMIL
 Creation : 08/2005
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :  Complex Substraction
 ********************************************************************/
@@ -445,7 +445,7 @@ cplx csub(cplx a,cplx b)
 Routine  : cmul
 Authors  : Laurent FERRO-FAMIL
 Creation : 08/2005
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :  Complex Multiplication
 ********************************************************************/
@@ -463,7 +463,7 @@ cplx cmul(cplx a,cplx b)
 Routine  : cdiv
 Authors  : Laurent FERRO-FAMIL
 Creation : 08/2005
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :  Complex Division
 ********************************************************************/
@@ -489,7 +489,7 @@ cplx cdiv(cplx a,cplx b)
 Routine  : cpwr
 Authors  : Eric POTTIER
 Creation : 08/2014
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :  Complex raised to a power
 ********************************************************************/
@@ -511,7 +511,7 @@ cplx cpwr(cplx a,float b)
 Routine  : cimg
 Authors  : Laurent FERRO-FAMIL
 Creation : 08/2005
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :  Imaginary Part of a Complex Number
 ********************************************************************/
@@ -524,7 +524,7 @@ float cimg(cplx a)
 Routine  : crel
 Authors  : Laurent FERRO-FAMIL
 Creation : 08/2005
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :  Real Part of a Complex Number
 ********************************************************************/
@@ -537,7 +537,7 @@ float crel(cplx a)
 Routine  : cmod
 Authors  : Laurent FERRO-FAMIL
 Creation : 08/2005
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :  Complex Modulus
 ********************************************************************/
@@ -554,7 +554,7 @@ float cmod(cplx a)
 Routine  : cmod2
 Authors  : Laurent FERRO-FAMIL
 Creation : 08/2005
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :  Complex Modulus
 ********************************************************************/
@@ -571,7 +571,7 @@ float cmod2(cplx a)
 Routine  : angle
 Authors  : Laurent FERRO-FAMIL
 Creation : 08/2005
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :  Argument of a Complex
 ********************************************************************/
@@ -591,7 +591,7 @@ float angle(cplx a)
 Routine  : cplx_sinc
 Authors  : Laurent FERRO-FAMIL
 Creation : 08/2005
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : Sinc Function of a Complex
 ********************************************************************/
@@ -616,7 +616,7 @@ cplx cplx_sinc(cplx a)
 Routine  : PolTypeConfig
 Authors  : Eric POTTIER
 Creation : 08/2010
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :  Check the polarimetric format configuration
 ********************************************************************/
@@ -1043,7 +1043,7 @@ int PolTypeConfig(char *PolType, int *NpolarIn, char *PolTypeIn, int *NpolarOut,
 Routine  : init_file_name
 Authors  : Eric POTTIER
 Creation : 08/2009
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : Initialisation of the binary file names
 ********************************************************************/
@@ -1213,7 +1213,7 @@ int init_file_name(char *PolType, char *Dir, char **FileName)
 Routine  : memory_alloc
 Authors  : Eric POTTIER
 Creation : 08/2010
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : BlockSize and Number of Blocks determination
 ********************************************************************/
@@ -1264,7 +1264,7 @@ int memory_alloc(char *filememerr, int Nlig, int Nwin, int *NbBlock, int *NligBl
 Routine  : PrintfLine
 Authors  : Eric POTTIER
 Creation : 08/2010
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : 
 ********************************************************************/
@@ -1282,7 +1282,7 @@ return 1;
 Routine  : CreateUsageHelpDataFormat
 Authors  : Eric POTTIER
 Creation : 06/2011
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : 
 ********************************************************************/
@@ -1415,7 +1415,7 @@ return 1;
 Routine  : CreateUsageHelpDataFormatInput
 Authors  : Eric POTTIER
 Creation : 06/2011
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : 
 ********************************************************************/
@@ -1452,7 +1452,7 @@ return 1;
 Routine  : init_matrix_block
 Authors  : Eric POTTIER
 Creation : 06/2011
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : Init global matrix used in util_block.c
 ********************************************************************/
@@ -1470,7 +1470,7 @@ return 1;
 Routine  : block_alloc
 Authors  : Eric POTTIER
 Creation : 10/2012
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : BlockSize and Number of Blocks determination
 ********************************************************************/
@@ -1498,7 +1498,7 @@ int block_alloc(int *NNligBlock, int SSubSampLig, int NNLookLig, int SSub_Nlig, 
 Routine  : CheckFreeMemory
 Authors  : Eric POTTIER
 Creation : 04/2017
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : Check the avalaible free memory (RAM)
 ********************************************************************/
@@ -1515,7 +1515,7 @@ return(FreeMemory);
 Routine  : CheckFreeMemoryWin32
 Authors  : Eric POTTIER
 Creation : 04/2017
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : Check the avalaible free memory (RAM) - Windows
 ********************************************************************/
@@ -1546,7 +1546,7 @@ int CheckFreeMemoryWin32(void)
 Routine  : CheckFreeMemoryLinux
 Authors  : Eric POTTIER
 Creation : 04/2017
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : Check the avalaible free memory (RAM) - Linux
 ********************************************************************/
@@ -1580,7 +1580,7 @@ int CheckFreeMemoryLinux(void)
 Routine  : my_fseek
 Authors  : Eric POTTIER
 Creation : 12/2017
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : Function fseek with a pointer size higher than LONG_MAX
 ********************************************************************/
@@ -1604,7 +1604,7 @@ return 1;
 Routine  : my_fseek_position
 Authors  : Eric POTTIER
 Creation : 12/2017
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description : Function fseek with a pointer size higher than LONG_MAX
 ********************************************************************/

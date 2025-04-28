@@ -1,5 +1,5 @@
 /*******************************************************************************
-PolSARpro v5.0 is free software; you can redistribute it and/or modify it under
+PolSARpro v6.0.4 is free software; you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software
 Foundation; either version 2 (1991) of the License, or any later version.
 This program is distributed in the hope that it will be useful, but WITHOUT ANY
@@ -10,12 +10,12 @@ See the GNU General Public License (Version 2, 1991) for more details.
 
 ********************************************************************************
 
-File   : statistics.c
+File     : statistics.c
 Project  : ESA_POLSARPRO
 Authors  : Carlos LOPEZ - MARTINEZ
 Version  : 1.1
 Creation : 06/2005
-Update  : 12/2006 (Stephane MERIC)
+Update   : 12/2006 (Stephane MERIC)
 
 *-------------------------------------------------------------------------------
 INSTITUT D'ELECTRONIQUE et de TELECOMMUNICATIONS de RENNES (I.E.T.R)
@@ -117,7 +117,7 @@ void CorrelationFactor(float *S1_re, float *S1_im, float *S2_re, float *S2_im, f
 Routine  : MeanVectorReal
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the Mean of a Vector of floats
 *-------------------------------------------------------------------------------
@@ -144,7 +144,7 @@ float MeanVectorReal(float *VC, int Ncol)
 Routine  : SecondOrderCenteredVectorReal
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the Second Order Centered Moment (Variance) of a Vector of floats
 *-------------------------------------------------------------------------------
@@ -172,7 +172,7 @@ float SecondOrderCenteredVectorReal(float *VC, int Ncol)
 Routine  : SecondOrderNonCenteredVectorReal
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the Second Order Non Centered Moment (Power) of a Vector of floats
 *-------------------------------------------------------------------------------
@@ -199,7 +199,7 @@ float SecondOrderNonCenteredVectorReal(float *VC, int Ncol)
 Routine  : ThirdOrderCenteredVectorReal
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the Third Order Centered Moment (Skewness) of a Vector of floats
 *-------------------------------------------------------------------------------
@@ -230,7 +230,7 @@ float ThirdOrderCenteredVectorReal(float *VC, int Ncol)
 Routine  : ThirdOrderNonCenteredVectorReal
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the Third Order Non Centered Moment of a Vector of floats
 *-------------------------------------------------------------------------------
@@ -257,7 +257,7 @@ float ThirdOrderNonCenteredVectorReal(float *VC, int Ncol)
 Routine  : FourthOrderCenteredVectorReal
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the Fourth Order Centered Moment (Kurtosis) of a Vector of floats
 *-------------------------------------------------------------------------------
@@ -288,7 +288,7 @@ float FourthOrderCenteredVectorReal(float *VC, int Ncol)
 Routine  : FourthOrderNonCenteredVectorReal
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the Fourth Order Non Centered Moment of a Vector of floats
 *-------------------------------------------------------------------------------
@@ -319,7 +319,7 @@ float FourthOrderNonCenteredVectorReal(float *VC, int Ncol)
 Routine  : MeanMatrixReal
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the Mean of a Matrix of floats
 *-------------------------------------------------------------------------------
@@ -348,7 +348,7 @@ float MeanMatrixReal(float **MT, int Nlin, int Ncol)
 Routine  : SecondOrderCenteredMatrixReal
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the Second Order Centered Moment (Variance) of a Matrix of floats
 *-------------------------------------------------------------------------------
@@ -378,7 +378,7 @@ float SecondOrderCenteredMatrixReal(float **MT, int Nlin, int Ncol)
 Routine  : SecondOrderNonCenteredMatrixReal
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the Second Order Non Centered Moment (Power) of a Matrix of floats
 *-------------------------------------------------------------------------------
@@ -407,7 +407,7 @@ float SecondOrderNonCenteredMatrixReal(float **MT, int Nlin, int Ncol)
 Routine  : ThirdOrderCenteredMatrixReal
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the Third Order Centered Moment (Skewness) of a Matrix of floats
 *-------------------------------------------------------------------------------
@@ -440,7 +440,7 @@ float ThirdOrderCenteredMatrixReal(float **MT, int Nlin, int Ncol)
 Routine  : ThirdOrderNonCenteredMatrixReal
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the Third Order Non Centered Moment of a Matrix of floats
 *-------------------------------------------------------------------------------
@@ -469,7 +469,7 @@ float ThirdOrderNonCenteredMatrixReal(float **MT, int Nlin, int Ncol)
 Routine  : FourthOrderCenteredMatrixReal
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the Fourth Order Centered Moment (Kurtosis) of a Matrix of floats
 *-------------------------------------------------------------------------------
@@ -502,7 +502,7 @@ float FourthOrderCenteredMatrixReal(float **MT, int Nlin, int Ncol)
 Routine  : FourthOrderNonCenteredMatrixReal
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the Fourth Order Non Centered Moment of a Matrix of floats
 *-------------------------------------------------------------------------------
@@ -534,7 +534,7 @@ float FourthOrderNonCenteredMatrixReal(float **MT, int Nlin, int Ncol)
 Routine  : comp
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description : Auxiliary function for the computation of Histograms
 *-------------------------------------------------------------------------------
@@ -559,7 +559,7 @@ int comp_float(const void *a, const void *b )
 Routine  : HistogramVectorReal
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the Histogram of a vector of floats
 *-------------------------------------------------------------------------------
@@ -612,7 +612,7 @@ void HistogramVectorReal(float *VC, int Ncol, float min_value, float max_value, 
 Routine  : HistogramMatrixReal
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the Histogram of a Matrix of floats
 *-------------------------------------------------------------------------------
@@ -678,7 +678,7 @@ void HistogramMatrixReal(float **MT, int Nlin, int Ncol, float min_value, float 
 Routine  : gammln
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Returns the value ln[Gamma(xx)] for xx > 0.
 *-------------------------------------------------------------------------------
@@ -703,7 +703,7 @@ float gammln(float xx)
 Routine  : gser
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Returns the incomplete gamma function P(a, x) evaluated 
 by its series representation as gamser.Also returns ln Gamma(a) as gln.
@@ -745,7 +745,7 @@ void gser(float *gamser, float a, float x, float *gln)
 Routine  : gcf
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Returns the incomplete gamma function Q(a, x) evaluated by 
 its continued fraction representation as gammcf. Also returns ln Gamma(a) as gln.
@@ -788,7 +788,7 @@ void gcf(float *gammcf, float a, float x, float *gln)
 Routine  : gammap
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Returns the incomplete gamma function P(a, x)
 *-------------------------------------------------------------------------------
@@ -818,7 +818,7 @@ float gammp(float a, float x)
 Routine  : gammaq
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Returns the incomplete gamma function Q(a, x) = 1 - P(a, x).
 *-------------------------------------------------------------------------------
@@ -847,7 +847,7 @@ float gammq(float a, float x)
 Routine  : chisq
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Given the array bins[1..nbins] containing the observed numbers of 
 events, and an array ebins[1..nbins] containing the expected numbers of events, 
@@ -891,7 +891,7 @@ void chisq(float *bins, float *ebins, int nbins, int knstrn, float *df, float *c
 Routine  : GaussHist
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Calculates the Gaussian PDF
 *-------------------------------------------------------------------------------
@@ -924,7 +924,7 @@ void GaussHist(float mean, float var, int Nsamples, int Nbin, float *Xvalue, flo
 Routine  : ExpHist
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Calculates the Exponential PDF
 *-------------------------------------------------------------------------------
@@ -956,7 +956,7 @@ void ExpHist(float mean, int Nsamples, int Nbin, float *Xvalue, float *ThHist)
 Routine  : RayHist
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Calculates the Rayleigh PDF
 *-------------------------------------------------------------------------------
@@ -988,7 +988,7 @@ void RayHist(float mean, int Nsamples, int Nbin, float *Xvalue, float *ThHist)
 Routine  : UnifHist
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Calculates the Exponential PDF
 *-------------------------------------------------------------------------------
@@ -1020,7 +1020,7 @@ void UnifHist(float min_value, float max_value, int Nsamples, int Nbin, float *X
 Routine  : chisq_testVector
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  This function performs the Chi Square Test following diffent models
 
@@ -1085,7 +1085,7 @@ void chisq_testVector(float *VC, int Ncol, float min_value, float max_value, int
 Routine  : probsks
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Kolmogorov - Smirnov Probability function.
 *-------------------------------------------------------------------------------
@@ -1114,7 +1114,7 @@ float probks(float alam)
 Routine  : ksks
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description : Given an array data1[1..n1], and an array data2[1..n2], this routine 
 returns the KS statistic d, and the signi.cance level prob for the null hypothesis 
@@ -1148,7 +1148,7 @@ void ksks(float *data,float *xvalues, unsigned long nbins, float (*func)(float),
 Routine  : erf
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Calculates the Error Function
 *-------------------------------------------------------------------------------
@@ -1169,7 +1169,7 @@ float erff(float x)
 Routine  : GaussCDF
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Calculates the Gaussian CDF
 *-------------------------------------------------------------------------------
@@ -1191,7 +1191,7 @@ float GaussCDF(float x)
 Routine  : ExpCDF
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Calculates the Exponential CDF
 *-------------------------------------------------------------------------------
@@ -1213,7 +1213,7 @@ float ExpCDF(float x)
 Routine  : RayCDF
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Calculates the Exponential CDF
 *-------------------------------------------------------------------------------
@@ -1235,7 +1235,7 @@ float RayCDF(float x)
 Routine  : UnifCDF
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Calculates the Uniform CDF between 0 and 1
 *-------------------------------------------------------------------------------
@@ -1254,7 +1254,7 @@ float UnifCDF(float x)
 Routine  : ks_testVector
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description : This function performs the KS Test following diffent models
 
@@ -1375,7 +1375,7 @@ Routine  : AmplitudeComplex
 Authors  : Carlos LOPEZ - MARTINEZ
 Version  : 1.0
 Creation : 06/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Calculates the amplitude of a complex number
 *-------------------------------------------------------------------------------
@@ -1396,7 +1396,7 @@ Routine  : PhaseComplex
 Authors  : Carlos LOPEZ - MARTINEZ
 Version  : 1.0
 Creation : 06/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Calculates the amplitude of a complex number
 *-------------------------------------------------------------------------------
@@ -1416,7 +1416,7 @@ Routine  : CorrelationFactor
 Authors  : Carlos LOPEZ - MARTINEZ
 Version  : 1.0
 Creation : 06/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Calculates the correlation factor with the Sxy elements
 *-------------------------------------------------------------------------------
@@ -1456,7 +1456,7 @@ void CorrelationFactor(float *S1_re, float *S1_im, float *S2_re, float *S2_im, f
 Routine  : HistogramVectorRealNorm
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the Histogram of a vector of floats
 *-------------------------------------------------------------------------------
@@ -1516,7 +1516,7 @@ void HistogramVectorRealNorm(float *VC, int Ncol, float min_value, float max_val
 Routine  : GaussHistNorm
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Calculates the Gaussian PDF
 *-------------------------------------------------------------------------------
@@ -1556,7 +1556,7 @@ void GaussHistNorm(float mean, float var, int Nsamples, int Nbin, float *Xvalue,
 Routine  : ExpHistNorm
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Calculates the Exponential PDF
 *-------------------------------------------------------------------------------
@@ -1595,7 +1595,7 @@ void ExpHistNorm(float mean, int Nsamples, int Nbin, float *Xvalue, float *ThHis
 Routine  : RayHistNorm
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Calculates the Rayleigh PDF
 *-------------------------------------------------------------------------------
@@ -1634,7 +1634,7 @@ void RayHistNorm(float mean, int Nsamples, int Nbin, float *Xvalue, float *ThHis
 Routine  : UnifHistNorm
 Authors  : Carlos LOPEZ - MARTINEZ
 Creation : 05/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Calculates the Exponential PDF
 *-------------------------------------------------------------------------------

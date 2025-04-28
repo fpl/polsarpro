@@ -1,5 +1,5 @@
 /********************************************************************
-PolSARpro v5.0 is free software; you can redistribute it and/or 
+PolSARpro v6.0.4 is free software; you can redistribute it and/or 
 modify it under the terms of the GNU General Public License as 
 published by the Free Software Foundation; either version 2 (1991) of
 the License, or any later version. This program is distributed in the
@@ -11,12 +11,12 @@ See the GNU General Public License (Version 2, 1991) for more details
 
 *********************************************************************
 
-File   : Tomo_NP_Spec_est.c
+File     : Tomo_NP_Spec_est.c
 Project  : ESA_POLSARPRO
 Authors  : Laurent FERRO-FAMIL
 Version  : 1.1
 Creation : 01/2015
-Update  : 08/2018 (E Pottier : split initial SW in two SWs : BF and 
+Update   : 08/2018 (E Pottier : split initial SW in two SWs : BF and 
                    Capon)
 *--------------------------------------------------------------------
 INSTITUT D'ELECTRONIQUE et de TELECOMMUNICATIONS de RENNES (I.E.T.R)

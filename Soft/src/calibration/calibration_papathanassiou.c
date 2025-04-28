@@ -1,5 +1,5 @@
 /********************************************************************
-PolSARpro v5.0 is free software; you can redistribute it and/or 
+PolSARpro v6.0.4 is free software; you can redistribute it and/or 
 modify it under the terms of the GNU General Public License as 
 published by the Free Software Foundation; either version 2 (1991) of
 the License, or any later version. This program is distributed in the
@@ -11,12 +11,12 @@ See the GNU General Public License (Version 2, 1991) for more details
 
 *********************************************************************
 
-File   : calibration_papathanassiou.c
+File     : calibration_papathanassiou.c
 Project  : ESA_POLSARPRO
 Authors  : Carlos LOPEZ - MARTINEZ
 Version  : 1.0
 Creation : 06/2005
-Update  : 
+Update   : 
 *--------------------------------------------------------------------
 INSTITUT D'ELECTRONIQUE et de TELECOMMUNICATIONS de RENNES (I.E.T.R)
 UMR CNRS 6164
@@ -797,7 +797,7 @@ for (lig = 0; lig <Sub_Nlig; lig++) {
 Routine  : AmplitudeComplex_v2
 Authors  : Carlos LOPEZ - MARTINEZ
 Version  : 1.0
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Calculates the amplitude of a complex number
 *-------------------------------------------------------------------------------
@@ -816,7 +816,7 @@ float AmplitudeComplex_v2(float Re, float Im)
 Routine  : PolyFit_3order
 Authors  : Carlos LOPEZ - MARTINEZ
 Version  : 1.0
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Aproximates complex data with a polynomial of third order
 *-------------------------------------------------------------------------------
@@ -950,7 +950,7 @@ void PolyFit_3order(float **data_range, int Ncol, float *fit_pol, int Ncol_final
 Routine  : ComplexProduct2
 Authors  : Carlos LOPEZ - MARTINEZ
 Version  : 1.0
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Product of two complex numbers
 *-------------------------------------------------------------------------------
@@ -973,7 +973,7 @@ void ComplexProduct2(float Re1, float Im1, float Re2, float Im2, float *ReP, flo
 Routine  : ComplexProduct3
 Authors  : Carlos LOPEZ - MARTINEZ
 Version  : 1.0
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Product of three complex numbers
 *-------------------------------------------------------------------------------
@@ -1001,7 +1001,7 @@ void ComplexProduct3(float Re1, float Im1, float Re2, float Im2, float Re3, floa
 Routine  : ComplexProduct3
 Authors  : Carlos LOPEZ - MARTINEZ
 Version  : 1.0
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Product of three complex numbers
 *-------------------------------------------------------------------------------
@@ -1032,7 +1032,7 @@ void ComplexProduct4(float Re1, float Im1, float Re2, float Im2, float Re3, floa
 Routine  : vector_double
 Authors  : Carlos LOPEZ - MARTINEZ
 Version  : 1.0
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Creates and allocates memory for a vector of double elements
 *-------------------------------------------------------------------------------
@@ -1059,7 +1059,7 @@ double *vector_double(int nrh)
 Routine  : free_vector_double
 Authors  : Carlos LOPEZ - MARTINEZ
 Version  : 1.0
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Erases a vector and disallocates memory for a vector
 of double elements
@@ -1079,7 +1079,7 @@ void free_vector_double(double *m)
 Routine  : mean_value_re
 Authors  : Carlos LOPEZ - MARTINEZ
 Version  : 1.0
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Mean value
 *-------------------------------------------------------------------------------
@@ -1108,7 +1108,7 @@ float mean_value_re(float **Data,int Nlin, int Ncol)
 Routine  : matrix_double
 Authors  : Carlos LOPEZ - MARTINEZ
 Version  : 1.0
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Creates and allocates memory for a 2D matrix of double elements
 *-------------------------------------------------------------------------------
@@ -1142,7 +1142,7 @@ double **matrix_double(int nrh, int nch)
 Routine  : free_matrix_double
 Authors  : Carlos LOPEZ - MARTINEZ
 Version  : 1.0
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Erases a matrix and disallocates memory for a 2D matrix of double elements
 *-------------------------------------------------------------------------------
@@ -1162,7 +1162,7 @@ void free_matrix_double(double **m, int nrh)
 Routine  : matrix3d_double
 Authors  : Carlos LOPEZ - MARTINEZ
 Version  : 1.0
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Creates and allocates memory for a 3D matrix of double elements
 *-------------------------------------------------------------------------------
@@ -1204,7 +1204,7 @@ double ***matrix3d_double(int nz, int nrh, int nch)
 Routine  : free_matrix3d_double
 Authors  : Carlos LOPEZ - MARTINEZ
 Version  : 1.0
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Erases a matrix and disallocates memory for a 3D matrix of double elements
 *-------------------------------------------------------------------------------
@@ -1228,7 +1228,7 @@ void free_matrix3d_double(double ***m, int nz, int nrh)
 Routine  : std_value_re
 Authors  : Carlos LOPEZ - MARTINEZ
 Version  : 1.0
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Mean value
 *-------------------------------------------------------------------------------
@@ -1264,7 +1264,7 @@ float std_value_re(float **Data, int Nlin, int Ncol)
 Routine  : InverseCmplxMatrix2Double
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2007
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the Inverse of a 2x2 Complex Matrix
 *-------------------------------------------------------------------------------
@@ -1311,7 +1311,7 @@ void InverseCmplxMatrix2Double(double ***M, double ***IM)
 Routine  : ProductCmplxMatrixDouble
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2007
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  computes the product of 2 NxN Complex Matrices
 *-------------------------------------------------------------------------------
@@ -1340,7 +1340,7 @@ void ProductCmplxMatrixDouble(double ***M1, double ***M2, double ***M3, int N)
 Routine  : InverseHermitianMatrix4Double
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the Inverse of a 4x4 Hermitian Matrix
 *-------------------------------------------------------------------------------
@@ -1482,7 +1482,7 @@ void InverseHermitianMatrix4Double(double ***HM, double ***IHM)
 Routine  : PseudoInverseHermitianMatrix4Double
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2007
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the Pseudo-Inverse of a 4x4 Hermitian Matrix
 *-------------------------------------------------------------------------------
@@ -1548,7 +1548,7 @@ void PseudoInverseHermitianMatrix4Double(double ***HM, double ***IHM)
 Routine  : DeterminantHermitianMatrix4Double
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the determinant of a 4x4 Hermitian Matrix
 *-------------------------------------------------------------------------------
@@ -1641,7 +1641,7 @@ void DeterminantHermitianMatrix4Double(double ***HM, double *det)
 Routine  : DeterminantCmplxMatrix2Double
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2007
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the determinant of a 2x2 Complex Matrix
 *-------------------------------------------------------------------------------

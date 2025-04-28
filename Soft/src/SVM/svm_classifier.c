@@ -1305,7 +1305,7 @@ int Npt_max_classe, int *Npt_classe, int Npolar, char **input_ind_pol)
 	Bmp_flag = 1;
 
 printf("/********************************************************************\n");fflush(stdout);
-printf("PolSARpro v5.0 is free software; you can redistribute it and/or \n");fflush(stdout);
+printf("PolSARpro v6.0.4 is free software; you can redistribute it and/or \n");fflush(stdout);
 printf("modify it under the terms of the GNU General Public License as \n");fflush(stdout);
 printf("published by the Free Software Foundation; either version 2 (1991) of\n");fflush(stdout);
 printf("the License, or any later version. This program is distributed in the\n");fflush(stdout);

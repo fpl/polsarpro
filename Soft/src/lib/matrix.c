@@ -1,5 +1,5 @@
 /*******************************************************************************
-PolSARpro v5.0 is free software; you can redistribute it and/or modify it under
+PolSARpro v6.0.4 is free software; you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software
 Foundation; either version 2 (1991) of the License, or any later version.
 This program is distributed in the hope that it will be useful, but WITHOUT ANY
@@ -10,12 +10,12 @@ See the GNU General Public License (Version 2, 1991) for more details.
 
 ********************************************************************************
 
-File   : matrix.c
+File     : matrix.c
 Project  : ESA_POLSARPRO
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Version  : 1.0
 Creation : 09/2003
-Update  :
+Update   :
 
 *-------------------------------------------------------------------------------
 INSTITUT D'ELECTRONIQUE et de TELECOMMUNICATIONS de RENNES (I.E.T.R)
@@ -87,7 +87,7 @@ void cplx_free_matrix( cplx **m,int nrh)
 Routine  : vector_char
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Creates and allocates memory for a vector of char elements
 *-------------------------------------------------------------------------------
@@ -109,7 +109,7 @@ char *vector_char(int nrh)
 Routine  : free_vector_char
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Erases a vector and disallocates memory for a vector
 of char elements
@@ -129,7 +129,7 @@ void free_vector_char(char *v)
 Routine  : vector_short_int
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Creates and allocates memory for a vector of short int elements
 *-------------------------------------------------------------------------------
@@ -155,7 +155,7 @@ short int *vector_short_int(int nrh)
 Routine  : free_vector_short_int
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Erases a vector and disallocates memory for a vector
 of short int elements
@@ -175,7 +175,7 @@ void free_vector_short_int(short int *m)
 Routine  : vector_int
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Creates and allocates memory for a vector of int elements
 *-------------------------------------------------------------------------------
@@ -201,7 +201,7 @@ int *vector_int(int nrh)
 Routine  : free_vector_int
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Erases a vector and disallocates memory for a vector
 of int elements
@@ -221,7 +221,7 @@ void free_vector_int(int *m)
 Routine  : vector_float
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Creates and allocates memory for a vector of float elements
 *-------------------------------------------------------------------------------
@@ -247,7 +247,7 @@ float *vector_float(int nrh)
 Routine  : free_vector_float
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Erases a vector and disallocates memory for a vector
 of float elements
@@ -267,7 +267,7 @@ void free_vector_float(float *m)
 Routine  : vector_double_float
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Creates and allocates memory for a vector of float elements
 *-------------------------------------------------------------------------------
@@ -293,7 +293,7 @@ double *vector_double_float(int nrh)
 Routine  : free_vector_double_float
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Erases a vector and disallocates memory for a vector
 of float elements
@@ -313,7 +313,7 @@ void free_vector_double_float(double *m)
 Routine  : matrix_char
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Creates and allocates memory for a 2D matrix of char elements
 *-------------------------------------------------------------------------------
@@ -342,7 +342,7 @@ char **matrix_char(int nrh, int nch)
 Routine  : free_matrix_char
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Erases a matrix and disallocates memory for a 2D matrix of char elements
 *-------------------------------------------------------------------------------
@@ -363,7 +363,7 @@ void free_matrix_char(char **m, int nrh)
 Routine  : matrix_short_int
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Creates and allocates memory for a 2D matrix of short int elements
 *-------------------------------------------------------------------------------
@@ -397,7 +397,7 @@ short int **matrix_short_int(int nrh, int nch)
 Routine  : free_matrix_short_int
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Erases a matrix and disallocates memory for a 2D matrix of short int elements
 *-------------------------------------------------------------------------------
@@ -418,7 +418,7 @@ void free_matrix_short_int(short int **m, int nrh)
 Routine  : matrix_int
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Creates and allocates memory for a 2D matrix of int elements
 *-------------------------------------------------------------------------------
@@ -453,7 +453,7 @@ int **matrix_int(int nrh, int nch)
 Routine  : free_matrix_int
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Erases a matrix and disallocates memory for a 2D matrix of int elements
 *-------------------------------------------------------------------------------
@@ -474,7 +474,7 @@ void free_matrix_int(int **m, int nrh)
 Routine  : matrix_float
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Creates and allocates memory for a 2D matrix of float elements
 *-------------------------------------------------------------------------------
@@ -509,7 +509,7 @@ float **matrix_float(int nrh, int nch)
 Routine  : free_matrix_float
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Erases a matrix and disallocates memory for a 2D matrix of float elements
 *-------------------------------------------------------------------------------
@@ -530,7 +530,7 @@ void free_matrix_float(float **m, int nrh)
 Routine  : matrix3d_short_int
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 02/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Creates and allocates memory for a 3D matrix of short int elements
 *-------------------------------------------------------------------------------
@@ -572,7 +572,7 @@ short int ***matrix3d_short_int(int nz, int nrh, int nch)
 Routine  : free_matrix3d_short_int
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 02/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Erases a matrix and disallocates memory for a 3D matrix of short int elements
 *-------------------------------------------------------------------------------
@@ -598,7 +598,7 @@ void free_matrix3d_short_int(short int ***m, int nz, int nrh)
 Routine  : matrix3d_int
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 02/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Creates and allocates memory for a 3D matrix of int elements
 *-------------------------------------------------------------------------------
@@ -640,7 +640,7 @@ int ***matrix3d_int(int nz, int nrh, int nch)
 Routine  : free_matrix3d_int
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 02/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Erases a matrix and disallocates memory for a 3D matrix of int elements
 *-------------------------------------------------------------------------------
@@ -666,7 +666,7 @@ void free_matrix3d_int(int ***m, int nz, int nrh)
 Routine  : matrix3d_float
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Creates and allocates memory for a 3D matrix of float elements
 *-------------------------------------------------------------------------------
@@ -708,7 +708,7 @@ float ***matrix3d_float(int nz, int nrh, int nch)
 Routine  : free_matrix3d_float
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Erases a matrix and disallocates memory for a 3D matrix of float elements
 *-------------------------------------------------------------------------------
@@ -735,7 +735,7 @@ void free_matrix3d_float(float ***m, int nz, int nrh)
 Routine  : matrix_double_float
 Authors  : Eric POTTIER
 Creation : 08/2014
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Creates and allocates memory for a 2D matrix of float elements
 *-------------------------------------------------------------------------------
@@ -770,7 +770,7 @@ double **matrix_double_float(int nrh, int nch)
 Routine  : free_matrix_double_float
 Authors  : Eric POTTIER
 Creation : 08/2014
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Erases a matrix and disallocates memory for a 2D matrix of float elements
 *-------------------------------------------------------------------------------
@@ -791,7 +791,7 @@ void free_matrix_double_float(double **m, int nrh)
 Routine  : cplx_vector
 Authors  : Laurent FERRO-FAMIL
 Creation : 08/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Creates and allocates memory for a vector of complex elements
 *-------------------------------------------------------------------------------
@@ -817,7 +817,7 @@ cplx *cplx_vector(int nh)
 Routine  : cplx_matrix
 Authors  : Laurent FERRO-FAMIL
 Creation : 08/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Creates and allocates memory for a 2D matrix of complex elements
 *-------------------------------------------------------------------------------
@@ -853,7 +853,7 @@ cplx **cplx_matrix(int nrh,int nch)
 Routine  : cplx_matrix3d
 Authors  : Laurent FERRO-FAMIL
 Creation : 08/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Creates and allocates memory for a 2D matrix of complex elements
 *-------------------------------------------------------------------------------
@@ -894,7 +894,7 @@ for (dd=0; dd<nz; dd++) {
 Routine  : cplx_free_matrix
 Authors  : Laurent FERRO-FAMIL
 Creation : 08/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Erases a matrix and disallocates memory for a 2D matrix of complex elements
 *-------------------------------------------------------------------------------
@@ -916,7 +916,7 @@ void cplx_free_matrix( cplx **m,int nrh)
 Routine  : cplx_free_matrix
 Authors  : Laurent FERRO-FAMIL
 Creation : 08/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Erases a matrix and disallocates memory for a 2D matrix of complex elements
 *-------------------------------------------------------------------------------

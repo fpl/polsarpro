@@ -191,7 +191,7 @@ void predict(FILE **input, FILE *output, FILE *output_dist, FILE *output_prob,in
 	l = 0; count = 0;
 	
 printf("/********************************************************************\n");fflush(stdout);
-printf("PolSARpro v5.0 is free software; you can redistribute it and/or \n");fflush(stdout);
+printf("PolSARpro v6.0.4 is free software; you can redistribute it and/or \n");fflush(stdout);
 printf("modify it under the terms of the GNU General Public License as \n");fflush(stdout);
 printf("published by the Free Software Foundation; either version 2 (1991) of\n");fflush(stdout);
 printf("the License, or any later version. This program is distributed in the\n");fflush(stdout);

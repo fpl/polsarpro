@@ -1,5 +1,5 @@
 /*******************************************************************************
-PolSARpro v5.0 is free software; you can redistribute it and/or modify it under
+PolSARpro v6.0.4 is free software; you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software
 Foundation; either version 2 (1991) of the License, or any later version.
 This program is distributed in the hope that it will be useful, but WITHOUT ANY
@@ -10,12 +10,12 @@ See the GNU General Public License (Version 2, 1991) for more details.
 
 ********************************************************************************
 
-File   : rawbinary_convert_RealImag_MLK_T3.c
+File     : rawbinary_convert_RealImag_MLK_T3.c
 Project  : ESA_POLSARPRO
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Version  : 1.0
 Creation : 11/2004
-Update  :
+Update   :
 
 *-------------------------------------------------------------------------------
 INSTITUT D'ELECTRONIQUE et de TELECOMMUNICATIONS de RENNES (I.E.T.R)
@@ -108,7 +108,7 @@ float **M_out;
 Routine  : main
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 
 Description :  Convert Raw Binary Data Files (Format 3x3 coherency matrix)

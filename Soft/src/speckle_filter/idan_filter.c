@@ -1,5 +1,5 @@
 /********************************************************************
-PolSARpro v5.0 is free software; you can redistribute it and/or 
+PolSARpro v6.0.4 is free software; you can redistribute it and/or 
 modify it under the terms of the GNU General Public License as 
 published by the Free Software Foundation; either version 2 (1991) of
 the License, or any later version. This program is distributed in the
@@ -11,12 +11,12 @@ See the GNU General Public License (Version 2, 1991) for more details
 
 *********************************************************************
 
-File   : idan_filter.c
+File     : idan_filter.c
 Project  : ESA_POLSARPRO
 Authors  : Gabriel VALISE, Emmanuel TROUVE
 Version  : 2.0
 Creation : 02/2007
-Update  : 08/2010 (E. POTTIER)
+Update   : 08/2010 (E. POTTIER)
 *--------------------------------------------------------------------
 GIPSA-Campus
 ENSIEG, Domaine Universitaire

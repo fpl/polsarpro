@@ -1,11 +1,11 @@
 /*******************************************************************************
-PolSARpro v5.0 is free software; you can redistribute it and/or modify it under
-File   : calibration_ainsworth.c
+PolSARpro v6.0.4 is free software; you can redistribute it and/or modify it under
+File     : calibration_ainsworth.c
 Project  : ESA_POLSARPRO
 Authors  : Carlos LOPEZ - MARTINEZ
 Version  : 1.0
 Creation : 06/2005
-Update  :
+Update   :
 
 *-------------------------------------------------------------------------------
 INSTITUT D'ELECTRONIQUE et de TELECOMMUNICATIONS de RENNES (I.E.T.R)
@@ -518,7 +518,7 @@ int main(int argc, char *argv[])
 Routine  : AmplitudeComplex_v2
 Authors  : Carlos LOPEZ - MARTINEZ
 Version  : 1.0
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Calculates the amplitude of a complex number
 *-------------------------------------------------------------------------------
@@ -537,7 +537,7 @@ float AmplitudeComplex_v2(float Re, float Im)
 Routine  : Gen_alpha
 Authors  : Carlos LOPEZ - MARTINEZ
 Version  : 1.0
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Generates alpha parameter
 *-------------------------------------------------------------------------------
@@ -573,7 +573,7 @@ void Gen_alpha(float **C,int dim, float **alpha)
 Routine  : Gen_alpha2
 Authors  : Carlos LOPEZ - MARTINEZ
 Version  : 1.0
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Generates alpha2 parameter
 *-------------------------------------------------------------------------------
@@ -606,7 +606,7 @@ void Gen_alpha2(float **C,int col, float **alpha)
 Routine  : Gen_sigma1
 Authors  : Carlos LOPEZ - MARTINEZ
 Version  : 1.0
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Generates the covariance matrix Sigma1
 *-------------------------------------------------------------------------------
@@ -722,7 +722,7 @@ void Gen_sigma1(float **C, int col, float **alpha, float **Sgm)
 Routine  : Gen_sigma2
 Authors  : Carlos LOPEZ - MARTINEZ
 Version  : 1.0
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Generates the covariance matrix Sigma1
 *-------------------------------------------------------------------------------
@@ -873,7 +873,7 @@ void Gen_sigma2(float **C, float **u_rg, float **v_rg, float **w_rg, float **z_r
 Routine  : Rescale_cross_terms
 Authors  : Carlos LOPEZ - MARTINEZ
 Version  : 1.0
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Reescales the cross-correlation terms with alpha2
 *-------------------------------------------------------------------------------
@@ -985,7 +985,7 @@ void Rescale_cross_terms(float ***a1, float ***a2, float **Sgm, int col)
 Routine  : Prod_HM
 Authors  : Carlos LOPEZ - MARTINEZ
 Version  : 1.0
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Product of 2 hermitian matrices
 *-------------------------------------------------------------------------------
@@ -1019,7 +1019,7 @@ void Prod_HM(float ***M1, float ***M2, int dim, float ***Mout)
 Routine  : Gen_A_B
 Authors  : Carlos LOPEZ - MARTINEZ
 Version  : 1.0
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Generates the parameters A and B
 *-------------------------------------------------------------------------------
@@ -1041,7 +1041,7 @@ void Gen_A_B(float **Sgm, int col, float **A, float **B)
 Routine  : Gen_system
 Authors  : Carlos LOPEZ - MARTINEZ
 Version  : 1.0
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Generates the systems to calculate the actualization of u, v, w 
 and z
@@ -1135,7 +1135,7 @@ void Gen_system(float **Sgm, float **A, float **B, int col, float **A8x8, float 
 Routine  : ludcmp
 Authors  : Carlos LOPEZ - MARTINEZ
 Version  : 1.0
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Given a matrix a[1..n][1..n], this routine replaces it by the LU 
 decomposition of a rowwise permutation of itself. a and n are input. a is output, 
@@ -1219,7 +1219,7 @@ void ludcmp(float **a, int n, int *indx, float *d)
 Routine  : ludksp
 Authors  : Carlos LOPEZ - MARTINEZ
 Version  : 1.0
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Solves the set of n linear equations A·X = B. Here a[1..n][1..n] 
 is input, not as the matrix A but rather as its LU decomposition, determined by 
@@ -1260,7 +1260,7 @@ void lubksb(float **a, int n, int *indx, float *b)
 Routine  : Gen_calibration_matrix
 Authors  : Carlos LOPEZ - MARTINEZ
 Version  : 1.0
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Generates the calibration matrix
 *-------------------------------------------------------------------------------
@@ -1365,7 +1365,7 @@ void Gen_calibration_matrix(float ***Cal, int col, float **u_rg, float **v_rg, f
 Routine  : Data_calibration
 Authors  : Carlos LOPEZ - MARTINEZ
 Version  : 1.0
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Final Calibration
 *-------------------------------------------------------------------------------

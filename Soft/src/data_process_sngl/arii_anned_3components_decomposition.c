@@ -1,5 +1,5 @@
 /********************************************************************
-PolSARpro v5.0 is free software; you can redistribute it and/or 
+PolSARpro v6.0.4 is free software; you can redistribute it and/or 
 modify it under the terms of the GNU General Public License as 
 published by the Free Software Foundation; either version 2 (1991) of
 the License, or any later version. This program is distributed in the
@@ -11,12 +11,12 @@ See the GNU General Public License (Version 2, 1991) for more details
 
 *********************************************************************
 
-File  : arii_anned_3components_decomposition.c
+File     : arii_anned_3components_decomposition.c
 Project  : ESA_POLSARPRO-SATIM
 Authors  : Eric POTTIER, Jacek STRZELCZYK
 Version  : 2.0
 Creation : 07/2015
-Update  :
+Update   :
 *--------------------------------------------------------------------
 INSTITUT D'ELECTRONIQUE et de TELECOMMUNICATIONS de RENNES (I.E.T.R)
 UMR CNRS 6164
@@ -86,11 +86,10 @@ int main(int argc, char *argv[])
   float hh1_re, hh1_im, vv1_re, vv1_im, hh2_re, hh2_im;
   float A0A0, B0pB;
   float sig, phi, psig, qsig;
-  float xopt, xmin, xmax, xprevious, xx;
+  float xopt, xmin, xmax, xprevious, xx, xxx;
   float test, previous, Pmin;
  
   float amax, a11, a22, a33;
-  float a12, a13, a23, b, c, d;
 
 /* Matrix arrays */
   float ***M_in;
@@ -372,9 +371,9 @@ iiopt = jjopt = flagstop = 0;
 ALPre = ALPim = BETre = BETim = OMEGA1 = OMEGA2 = OMEGAodd = OMEGAdbl = 0.;
 delta = lambda1 = lambda2 = gamma = epsilon = rho_re = rho_im = 0.;
 hh1_re = hh1_im = vv1_re = vv1_im = hh2_re = hh2_im = A0A0 = B0pB = 0.;
-sig = phi = psig = qsig = xopt = xmin = xmax = xprevious = xx = test = previous = Pmin = 0.;
-amax = a11 = a22 = a33 = a12 = a13 = a23 = b = c = d = 0.;
-#pragma omp parallel for private(col, ii, jj, M_avg, M, V, lambda) firstprivate(iiopt, jjopt, flagstop, ALPre, ALPim, BETre, BETim, OMEGA1, OMEGA2, OMEGAodd, OMEGAdbl, delta, lambda1, lambda2, gamma, epsilon, rho_re, rho_im, hh1_re, hh1_im, vv1_re, vv1_im, hh2_re, hh2_im, A0A0, B0pB, sig, phi, psig, qsig, xopt, xmin, xmax, xprevious, xx, test, previous, Pmin, amax, a11, a22, a33, a12, a13, a23, b, c, d) shared(ligDone)
+sig = phi = psig = qsig = xopt = xmin = xmax = xprevious = xx = xxx = test = previous = Pmin = 0.;
+amax = a11 = a22 = a33 = 0.;
+#pragma omp parallel for private(col, ii, jj, M_avg, M, V, lambda) firstprivate(iiopt, jjopt, flagstop, ALPre, ALPim, BETre, BETim, OMEGA1, OMEGA2, OMEGAodd, OMEGAdbl, delta, lambda1, lambda2, gamma, epsilon, rho_re, rho_im, hh1_re, hh1_im, vv1_re, vv1_im, hh2_re, hh2_im, A0A0, B0pB, sig, phi, psig, qsig, xopt, xmin, xmax, xprevious, xx, xxx, test, previous, Pmin, amax, a11, a22, a33) shared(ligDone)
   for (lig = 0; lig < NligBlock[Nb]; lig++) {
     ligDone++;
     if (omp_get_thread_num() == 0) PrintfLine(ligDone,NligBlock[Nb]);
@@ -392,29 +391,10 @@ amax = a11 = a22 = a33 = a12 = a13 = a23 = b = c = d = 0.;
             a11 = M_avg[C311][col]/CV[ii][jj][C311];
             a22 = M_avg[C322][col]/CV[ii][jj][C322];
             a33 = M_avg[C333][col]/CV[ii][jj][C333];
-            //a12
-            b = M_avg[C311][col]*CV[ii][jj][C322]+M_avg[C322][col]*CV[ii][jj][C311];
-            b = b - 2.*(M_avg[C312_re][col]*CV[ii][jj][C312_re]+M_avg[C312_im][col]*CV[ii][jj][C312_im]);
-            c = M_avg[C311][col]*M_avg[C322][col]-M_avg[C312_re][col]*M_avg[C312_re][col]-M_avg[C312_im][col]*M_avg[C312_im][col];
-            d = CV[ii][jj][C311]*CV[ii][jj][C322]-CV[ii][jj][C312_re]*CV[ii][jj][C312_re]-CV[ii][jj][C312_im]*CV[ii][jj][C312_im];
-            a12 = (b-sqrt(b*b-4.*c*d))/(2.*d);
-            //a13
-            b = M_avg[C311][col]*CV[ii][jj][C333]+M_avg[C333][col]*CV[ii][jj][C311];
-            b = b - 2.*(M_avg[C313_re][col]*CV[ii][jj][C313_re]+M_avg[C313_im][col]*CV[ii][jj][C313_im]);
-            c = M_avg[C311][col]*M_avg[C333][col]-M_avg[C313_re][col]*M_avg[C313_re][col]-M_avg[C313_im][col]*M_avg[C313_im][col];
-            d = CV[ii][jj][C311]*CV[ii][jj][C333]-CV[ii][jj][C313_re]*CV[ii][jj][C313_re]-CV[ii][jj][C313_im]*CV[ii][jj][C313_im];
-            a13 = (b-sqrt(b*b-4.*c*d))/(2.*d);
-            //a23
-            b = M_avg[C322][col]*CV[ii][jj][C333]+M_avg[C333][col]*CV[ii][jj][C322];
-            b = b - 2.*(M_avg[C323_re][col]*CV[ii][jj][C323_re]+M_avg[C323_im][col]*CV[ii][jj][C323_im]);
-            c = M_avg[C322][col]*M_avg[C333][col]-M_avg[C323_re][col]*M_avg[C323_re][col]-M_avg[C323_im][col]*M_avg[C323_im][col];
-            d = CV[ii][jj][C322]*CV[ii][jj][C333]-CV[ii][jj][C323_re]*CV[ii][jj][C323_re]-CV[ii][jj][C323_im]*CV[ii][jj][C323_im];
-            a23 = (b-sqrt(b*b-4.*c*d))/(2.*d);
 
             xmin = 0.; 
             xmax = a11; if (a22 <= xmax) xmax = a22; if (a33 <= xmax) xmax = a33;
             amax = xmax;
-            if (a12 <= xmax) xmax = a12; if (a13 <= xmax) xmax = a13; if (a23 <= xmax) xmax = a23;
             flagstop = 0; xprevious = 0.; test = 0.; previous = 0.;
 
             while (flagstop == 0) {
@@ -440,32 +420,38 @@ amax = a11 = a22 = a33 = a12 = a13 = a23 = b = c = d = 0.;
               M[2][2][0] = eps + M_avg[8][col] - xx*CV[ii][jj][8];
               M[2][2][1] = 0.;
 
-              a11 = M[0][0][0]*M[1][1][0]*M[2][2][0] + 2.*M[0][2][0]*(M[0][1][0]*M[1][2][0]-M[0][1][1]*M[1][2][1]);
-              a11 = a11 + 2.*M[0][2][1]*(M[0][1][1]*M[1][2][0]+M[0][1][0]*M[1][2][1]);
-              a11 = a11 - M[0][0][0]*(M[1][2][0]*M[1][2][0]+M[1][2][1]*M[1][2][1]);
-              a11 = a11 - M[1][1][0]*(M[0][2][0]*M[0][2][0]+M[0][2][1]*M[0][2][1]);
-              a11 = a11 - M[2][2][0]*(M[0][1][0]*M[0][1][0]+M[0][1][1]*M[0][1][1]);
-
-              a22 = M[0][0][0]*M[1][1][0]-(M[0][1][0]*M[0][1][0]+M[0][1][1]*M[0][1][1]);
-              a22 = a22 + M[0][0][0]*M[2][2][0]-(M[0][2][0]*M[0][2][0]+M[0][2][1]*M[0][2][1]);
-              a22 = a22 + M[1][1][0]*M[2][2][0]-(M[1][2][0]*M[1][2][0]+M[1][2][1]*M[1][2][1]);
-
-              a33 = M[0][0][0] + M[1][1][0] + M[2][2][0];
-
               test = -1;
-              if ((a11 > 0.)&&(a22 > 0.)&&(a33 > 0.)) test = +1.;
-              
+              Diagonalisation(3, M, V, lambda);
+              if ((lambda[0] > 0.)&&(lambda[1] > 0.)&&(lambda[2] > 0.)) test = +1.;
+
               if (test == -1.) {
-                xmax = xx; xmin = xmin;
-                previous = -1.;
-                } else {
-                xmax = xmax; xmin = xx; xprevious = xx;
-                if (previous == +1.) {
-                  xx = (xmax - xmin)/2.;
-                  if (fabs(xx - xprevious) < (amax / 100.)) {
+                if (previous != +1.) {
+                  xmax = xx; xmin = xmin; xprevious = xx;
+                  xxx = (xmax - xmin)/2.;
+                  if (fabs(xxx - xprevious) < (amax / 100.)) {
                     flagstop = 1;
                     xx = xprevious;
                     }
+                  }
+                if (previous == +1.) {
+                  flagstop = 1;
+                  xx = xprevious;
+                  }
+                previous = -1.;
+                }
+
+              if (test == +1.) {
+                xmax = xmax; xmin = xx; xprevious = xx;
+                if (previous != -1.) {
+                  xxx = (xmax - xmin)/2.;
+                  if (fabs(xxx - xprevious) < (amax / 100.)) {
+                    flagstop = 1;
+                    xx = xprevious;
+                    }
+                  }
+                if (previous == -1.) {
+                  flagstop = 1;
+                  xx = xprevious;
                   }
                 previous = +1.;                
                 }

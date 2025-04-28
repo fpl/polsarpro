@@ -1,5 +1,5 @@
 /********************************************************************
-PolSARpro v5.0 is free software; you can redistribute it and/or 
+PolSARpro v6.0.4 is free software; you can redistribute it and/or 
 modify it under the terms of the GNU General Public License as 
 published by the Free Software Foundation; either version 2 (1991) of
 the License, or any later version. This program is distributed in the
@@ -11,13 +11,13 @@ See the GNU General Public License (Version 2, 1991) for more details
 
 *********************************************************************
 
-File   : an_yang_filter.c
+File     : an_yang_filter.c
 Project  : ESA_POLSARPRO-SATIM
 Authors  : Eric POTTIER, Jacek STRZELCZYK
 Authors  : J. Chen, Y. Chen, W. An, Y. Cui, J. Yang
 Version  : 2.0
 Creation : 07/2015
-Update  :
+Update   :
 *--------------------------------------------------------------------
 J. Chen, W. An, Y. Cui, J. Yang
 Department of Electronic Engineering

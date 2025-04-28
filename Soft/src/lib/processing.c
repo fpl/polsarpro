@@ -1,5 +1,5 @@
 /*******************************************************************************
-PolSARpro v5.0 is free software; you can redistribute it and/or modify it under
+PolSARpro v6.0.4 is free software; you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software
 Foundation; either version 2 (1991) of the License, or any later version.
 This program is distributed in the hope that it will be useful, but WITHOUT ANY
@@ -10,12 +10,12 @@ See the GNU General Public License (Version 2, 1991) for more details.
 
 ********************************************************************************
 
-File   : processing.c
+File     : processing.c
 Project  : ESA_POLSARPRO
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Version  : 1.0
 Creation : 09/2003
-Update  :
+Update   :
 
 *-------------------------------------------------------------------------------
 INSTITUT D'ELECTRONIQUE et de TELECOMMUNICATIONS de RENNES (I.E.T.R)
@@ -93,7 +93,7 @@ cplx cplx_quadratic_form(cplx **m1,cplx *v2,int nlig,int ncol);
 Routine  : ProductRealMatrix
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 03/2007
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  computes the product of 2 NxN Real Matrices
 *-------------------------------------------------------------------------------
@@ -119,7 +119,7 @@ void ProductRealMatrix(float **M1, float **M2, float **M3, int N)
 Routine  : InverseRealMatrix2
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2007
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the Inverse of a 2x2 Real Matrix
 *-------------------------------------------------------------------------------
@@ -144,7 +144,7 @@ void InverseRealMatrix2(float **M, float **IM)
 Routine  : InverseRealMatrix4
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 03/2007
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the Inverse of a 4x4 Real Matrix
 *-------------------------------------------------------------------------------
@@ -255,7 +255,7 @@ void InverseRealMatrix4(float **HM, float **IHM)
 Routine  : ProductCmplxMatrix
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2007
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  computes the product of 2 NxN Complex Matrices
 *-------------------------------------------------------------------------------
@@ -284,7 +284,7 @@ void ProductCmplxMatrix(float ***M1, float ***M2, float ***M3, int N)
 Routine  : InverseCmplxMatrix2
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2007
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the Inverse of a 2x2 Complex Matrix
 *-------------------------------------------------------------------------------
@@ -331,7 +331,7 @@ void InverseCmplxMatrix2(float ***M, float ***IM)
 Routine  : DeterminantCmplxMatrix2
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2007
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the determinant of a 2x2 Complex Matrix
 *-------------------------------------------------------------------------------
@@ -353,7 +353,7 @@ det[1] = det[1] - (M[0][1][0] * M[1][0][1] + M[0][1][1] * M[1][0][0]) + eps;
 Routine  : DeterminantCmplxMatrix3
 Authors  : Eric POTTIER
 Creation : 01/2012
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the determinant of a 3x3 Complex Matrix
 *-------------------------------------------------------------------------------
@@ -401,7 +401,7 @@ det[1] += M[2][0][0] * dett[1] + M[2][0][1] * dett[0];
 Routine  : DeterminantCmplxMatrix4
 Authors  : Eric POTTIER
 Creation : 01/2012
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the determinant of a 4x4 Complex Matrix
 *-------------------------------------------------------------------------------
@@ -477,7 +477,7 @@ det[1] -= M[3][0][0] * dett[1] + M[3][0][1] * dett[0];
 Routine  : InverseHermitianMatrix2
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the Inverse of a 2x2 Hermitian Matrix
 *-------------------------------------------------------------------------------
@@ -519,7 +519,7 @@ void InverseHermitianMatrix2(float ***HM, float ***IHM)
 Routine  : Trace2_HM1xHM2
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  computes the trace of the product of 2 2x2 Hermitian Matrices
 *-------------------------------------------------------------------------------
@@ -543,7 +543,7 @@ float Trace2_HM1xHM2(float ***HM1, float ***HM2)
 Routine  : ProductHermitianMatrix2
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  computes the product of 2 2x2 Hermitian Matrices
 *-------------------------------------------------------------------------------
@@ -572,7 +572,7 @@ void ProductHermitianMatrix2(float ***HM1, float ***HM2, float ***HM3)
 Routine  : DeterminantHermitianMatrix2
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the determinant of a 2x2 Hermitian Matrix
 *-------------------------------------------------------------------------------
@@ -593,7 +593,7 @@ void DeterminantHermitianMatrix2(float ***HM, float *det)
 Routine  : InverseHermitianMatrix3
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the Inverse of a 3x3 Hermitian Matrix
 *-------------------------------------------------------------------------------
@@ -652,7 +652,7 @@ void InverseHermitianMatrix3(float ***HM, float ***IHM)
 Routine  : Trace3_HM1xHM2
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  computes the trace of the product of 2 3x3 Hermitian Matrices
 *-------------------------------------------------------------------------------
@@ -681,7 +681,7 @@ float Trace3_HM1xHM2(float ***HM1, float ***HM2)
 Routine  : DeterminantHermitianMatrix3
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the determinant of a 3x3 Hermitian Matrix
 *-------------------------------------------------------------------------------
@@ -733,7 +733,7 @@ void DeterminantHermitianMatrix3(float ***HM, float *det)
 Routine  : InverseHermitianMatrix4
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the Inverse of a 4x4 Hermitian Matrix
 *-------------------------------------------------------------------------------
@@ -889,7 +889,7 @@ void InverseHermitianMatrix4(float ***HM, float ***IHM)
 Routine  : PseudoInverseHermitianMatrix4
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2007
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the Pseudo-Inverse of a 4x4 Hermitian Matrix
 *-------------------------------------------------------------------------------
@@ -945,7 +945,7 @@ void PseudoInverseHermitianMatrix4(float ***HM, float ***IHM)
 Routine  : Trace4_HM1xHM2
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  computes the trace of the product of 2 4x4 Hermitian Matrices
 *-------------------------------------------------------------------------------
@@ -977,7 +977,7 @@ float Trace4_HM1xHM2(float ***HM1, float ***HM2)
 Routine  : DeterminantHermitianMatrix4
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the determinant of a 4x4 Hermitian Matrix
 *-------------------------------------------------------------------------------
@@ -1080,7 +1080,7 @@ void DeterminantHermitianMatrix4(float ***HM, float *det)
 Routine  : Fft
 Authors  : Eric POTTIER
 Creation : 01/1998
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Fast Fourier Transform
 *-------------------------------------------------------------------------------
@@ -1164,7 +1164,7 @@ void Fft(float *vect, int nb_pts, int inv)
 Routine  : diagonalisation
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the eigenvectors and eigenvalues of a N*N hermitian
 matrix (with N < 10)
@@ -1343,7 +1343,7 @@ void Diagonalisation(int MatrixDim, float ***HM, float ***EigenVect, float *Eige
 Routine  : MinMaxArray2D
 Authors  : Eric POTTIER, Laurent FERRO-FAMIL
 Creation : 01/2002
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Return the min and the max values of an array of float
 *-------------------------------------------------------------------------------
@@ -1372,7 +1372,7 @@ for(lig=0;lig<nlig;lig++)
 Routine  : cplx_htransp_mat
 Authors  : Laurent FERRO-FAMIL
 Creation : 08/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the hermitian transpose of a complex matrix
 *-------------------------------------------------------------------------------
@@ -1394,7 +1394,7 @@ for(lig=0;lig<nlig;lig++)
 Routine  : cplx_mul_mat
 Authors  : Laurent FERRO-FAMIL
 Creation : 08/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the multiplication of two complex matrices
 *-------------------------------------------------------------------------------
@@ -1424,7 +1424,7 @@ for(lig=0;lig<nlig;lig++)
 Routine  : cplx_diag_mat2
 Authors  : Laurent FERRO-FAMIL
 Creation : 08/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the eigenvectors and eigenvalues of a 2*2 hermitian
 matrix (literal expressions)
@@ -1515,7 +1515,7 @@ V[1][1].re=v2.re/(n+eps);V[1][1].im=v2.im/(n+eps);
 Routine  : cplx_diag_mat3
 Authors  : Laurent FERRO-FAMIL
 Creation : 08/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the eigenvectors and eigenvalues of a 3*3 hermitian
 matrix (literal expressions)
@@ -1750,7 +1750,7 @@ L[0] *= span; L[1] *= span; L[2] *= span;
 Routine  : cplx_inv_mat2
 Authors  : Laurent FERRO-FAMIL
 Creation : 08/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the inverse of a complex matrix
 *-------------------------------------------------------------------------------
@@ -1780,7 +1780,7 @@ void cplx_inv_mat2(cplx **mat,cplx **res)
 Routine  : cplx_inv_mat
 Authors  : Laurent FERRO-FAMIL
 Creation : 08/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the inverse of a complex matrix
 *-------------------------------------------------------------------------------
@@ -1826,7 +1826,7 @@ void cplx_inv_mat(cplx **mat,cplx **res)
 Routine  : cplx_diag_mat6
 Authors  : Laurent FERRO-FAMIL
 Creation : 08/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the eigenvectors and eigenvalues of a 6*6 hermitian
 matrix
@@ -1992,7 +1992,7 @@ Authors  :
   Cambridge University Press, 1992, Section 8.5, ISBN 0-521-43108-5
   This code by Nicolas Devillard - 1998. Public domain.
 Creation : 11/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the median value of an array of size n
 *-------------------------------------------------------------------------------
@@ -2079,7 +2079,7 @@ float MedianArray(float array[], int n)
 Routine  : MinMaxContrastMedian
 Authors  : Eric POTTIER
 Creation : 07/2011
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Description :  Return the min and the max values of an array of float
 *--------------------------------------------------------------------
@@ -2197,7 +2197,7 @@ Authors  :
   Cambridge University Press, 1992, Section 8.5, ISBN 0-521-43108-5
   This code by Nicolas Devillard - 1998. Public domain.
 Creation : 11/2005
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the median value of an array of size n
 *-------------------------------------------------------------------------------
@@ -2271,7 +2271,7 @@ float MinMaxContrastMedianArray(float arr[], int npts)
 Routine  : cplx_mul_mat_val
 Authors  : Eric POTTIER
 Creation : 08/2014
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the multiplication of a complex matrice with
                a float value
@@ -2300,7 +2300,7 @@ for(lig=0;lig<nlig;lig++)
 Routine  : cplx_mul_mat_cval
 Authors  : Eric POTTIER
 Creation : 08/2014
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the multiplication of a complex matrice with
                a complex value
@@ -2326,7 +2326,7 @@ for(lig=0;lig<nlig;lig++)
 Routine  : cplx_mul_mat_vect
 Authors  : Eric POTTIER
 Creation : 08/2014
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the multiplication of a complex matrix with
                a float vector
@@ -2362,7 +2362,7 @@ for(lig=0;lig<nlig;lig++) {
 Routine  : cplx_mul_mat_cvect
 Authors  : Eric POTTIER
 Creation : 08/2014
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the multiplication of a complex matrix with
                a complex vector
@@ -2392,7 +2392,7 @@ for(lig=0;lig<nlig;lig++) {
 Routine  : cplx_quadratic_form
 Authors  : Eric POTTIER
 Creation : 08/2014
-Update  :
+Update   :
 *-------------------------------------------------------------------------------
 Description :  Computes the quadratic form XtQX of a complex matrix
                with a complex vector

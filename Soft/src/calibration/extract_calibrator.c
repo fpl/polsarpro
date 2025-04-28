@@ -1,5 +1,5 @@
 /********************************************************************
-PolSARpro v5.0 is free software; you can redistribute it and/or 
+PolSARpro v6.0.4 is free software; you can redistribute it and/or 
 modify it under the terms of the GNU General Public License as 
 published by the Free Software Foundation; either version 2 (1991) of
 the License, or any later version. This program is distributed in the
@@ -11,12 +11,12 @@ See the GNU General Public License (Version 2, 1991) for more details
 
 *********************************************************************
 
-File   : extract_calibrator.c
+File     : extract_calibrator.c
 Project  : ESA_POLSARPRO
 Authors  : Eric POTTIER
 Version  : 1.0
 Creation : 12/2011
-Update  :
+Update   :
 *--------------------------------------------------------------------
 INSTITUT D'ELECTRONIQUE et de TELECOMMUNICATIONS de RENNES (I.E.T.R)
 UMR CNRS 6164
@@ -217,7 +217,7 @@ return 1;
   Routine  : FilePointerPosition
   Authors  : Eric POTTIER, Laurent FERRO-FAMIL
   Creation : 04/2005
-  Update  :
+  Update   :
 *-------------------------------------------------------------------
   Description :  Update the Pointer position of the data files
 *-------------------------------------------------------------------
@@ -242,7 +242,7 @@ for (np=0; np < Npolar; np++) my_fseek_position(in_file[np], PointerPosition);
   Routine  : ExtractData
   Authors  : Eric POTTIER, Laurent FERRO-FAMIL
   Creation : 04/2005
-  Update  :
+  Update   :
 *-------------------------------------------------------------------
   Description :  Extract Calibrator data
 *-------------------------------------------------------------------
@@ -272,7 +272,7 @@ free_vector_float(Tmp);
   Routine  : WriteCalibrator
   Authors  : Eric POTTIER, Laurent FERRO-FAMIL
   Creation : 04/2005
-  Update  :
+  Update   :
 *-------------------------------------------------------------------
   Description :  Write the selected area in binary files
 *-------------------------------------------------------------------
@@ -365,7 +365,7 @@ free_matrix_float(ModArgY,2*Npolar);
   Routine  : WriteCalibratorVal
   Authors  : Eric POTTIER, Laurent FERRO-FAMIL
   Creation : 04/2005
-  Update  :
+  Update   :
 *-------------------------------------------------------------------
   Description :  Write the selected area in binary files
 *-------------------------------------------------------------------
@@ -400,7 +400,7 @@ void WriteCalibratorVal(char *CalibratorValTxt, char *CalibratorValBin, int Leng
   Routine  : WriteCalibrator3D
   Authors  : Eric POTTIER, Laurent FERRO-FAMIL
   Creation : 04/2005
-  Update  :
+  Update   :
 *-------------------------------------------------------------------
   Description :  Write the selected 3D areas in binary files
 *-------------------------------------------------------------------

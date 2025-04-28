@@ -1,5 +1,5 @@
 /********************************************************************
-PolSARpro v5.0 is free software; you can redistribute it and/or 
+PolSARpro v6.0.4 is free software; you can redistribute it and/or 
 modify it under the terms of the GNU General Public License as 
 published by the Free Software Foundation; either version 2 (1991) of
 the License, or any later version. This program is distributed in the
@@ -11,12 +11,12 @@ See the GNU General Public License (Version 2, 1991) for more details
 
 *********************************************************************
 
-File  : training_set_sampler.c
+File     : training_set_sampler.c
 Project  : ESA_POLSARPRO
 Authors  : Laurent FERRO-FAMIL (v2.0 Eric POTTIER)
 Version  : 2.0
 Creation : 07/2003 (v2.0 08/2011)
-Update  :
+Update   :
 *--------------------------------------------------------------------
 INSTITUT D'ELECTRONIQUE et de TELECOMMUNICATIONS de RENNES (I.E.T.R)
 UMR CNRS 6164
@@ -571,7 +571,7 @@ if (Bmp_flag == 1) {
 Routine  : read_coord
 Authors  : Laurent FERRO-FAMIL
 Creation : 07/2003
-Update  :
+Update   :
 *-------------------------------------------------------------------
 Description :  Read training area coordinates
 *-------------------------------------------------------------------
@@ -645,7 +645,7 @@ void read_coord(char *file_name)
 Routine  : create_borders
 Authors  : Laurent FERRO-FAMIL
 Creation : 07/2003
-Update  :
+Update   :
 *-------------------------------------------------------------------
 Description : Create borders
 *-------------------------------------------------------------------
@@ -719,7 +719,7 @@ void create_borders(float **border_map)
 Routine  : create_areas
 Authors  : Laurent FERRO-FAMIL
 Creation : 07/2003
-Update  :
+Update   :
 *-------------------------------------------------------------------
 Description : Create areas
 *-------------------------------------------------------------------

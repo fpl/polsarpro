@@ -1,5 +1,5 @@
 /*******************************************************************************
-PolSARpro v5.0 is free software; you can redistribute it and/or modify it under
+PolSARpro v6.0.4 is free software; you can redistribute it and/or modify it under
 the terms of the GNU General Public License as published by the Free Software
 Foundation; either version 2 (1991) of the License, or any later version.
 This program is distributed in the hope that it will be useful, but WITHOUT ANY
@@ -10,12 +10,12 @@ See the GNU General Public License (Version 2, 1991) for more details.
 
 ********************************************************************************
 
-File   : sub_aperture.c
+File     : sub_aperture.c
 Project  : ESA_POLSARPRO
 Authors  : Laurent FERRO-FAMIL
 Version  : 1.0
 Creation : 04/2005
-Update  :
+Update   :
 
 *-------------------------------------------------------------------------------
 INSTITUT D'ELECTRONIQUE et de TELECOMMUNICATIONS de RENNES (I.E.T.R)
@@ -61,7 +61,7 @@ void select_sub_spectrum(float **fft_im,float **c_im,int offset,float *ham_win,i
   Routine  : write_config
   Authors  : Laurent FERRO-FAMIL
   Creation : 04/2005
-  Update  :
+  Update   :
 *-------------------------------------------------------------------------------
   Description :  Writes an image number of lines and rows from a configuration file
 *-------------------------------------------------------------------------------
@@ -118,7 +118,7 @@ if ((file = fopen(file_name, "w")) == NULL) {
   Routine  : hamming
   Authors  : Laurent FERRO-FAMIL
   Creation : 04/2005
-  Update  :
+  Update   :
 *-------------------------------------------------------------------------------
   Description :  Create a Hamming weighting function
 *-------------------------------------------------------------------------------
@@ -143,7 +143,7 @@ for(lig=0;lig<n;lig++)
   Routine  : estimate_spectrum
   Authors  : Laurent FERRO-FAMIL
   Creation : 04/2005
-  Update  :
+  Update   :
 *-------------------------------------------------------------------------------
   Description :  Estimation of the SAR image Doppler spectrum
 *-------------------------------------------------------------------------------
@@ -208,7 +208,7 @@ M_in = vector_float(2*Ncol);
   Routine  : correction_function
   Authors  : Laurent FERRO-FAMIL
   Creation : 04/2005
-  Update  :
+  Update   :
 *-------------------------------------------------------------------------------
   Description :  Creation of the correction function
 *-------------------------------------------------------------------------------
@@ -349,7 +349,7 @@ void correction_function(int NNpolar,float **spectrum,float **correc,int weight,
   Routine  : compensate_spectrum
   Authors  : Laurent FERRO-FAMIL
   Creation : 04/2005
-  Update  :
+  Update   :
 *-------------------------------------------------------------------------------
   Description :  determination of the SAR image Doppler compensated spectrum
 *-------------------------------------------------------------------------------
@@ -421,7 +421,7 @@ void compensate_spectrum(FILE *in_file,float *correc,float **fft_im,int Nlig,int
   Routine  : select_sub_spectrum
   Authors  : Laurent FERRO-FAMIL
   Creation : 04/2005
-  Update  :
+  Update   :
 *-------------------------------------------------------------------------------
   Description :  Selection of a SAR image Doppler sub-spectrum
 *-------------------------------------------------------------------------------
@@ -452,7 +452,7 @@ void select_sub_spectrum(float **fft_im,float **c_im,int offset,float *ham_win,i
   Routine  : estimate_dopplershift
   Authors  : Eric POTTIER
   Creation : 04/2012
-  Update  :
+  Update   :
 *-------------------------------------------------------------------
   Description :  Estimation of the Doppler Shift
 *-------------------------------------------------------------------

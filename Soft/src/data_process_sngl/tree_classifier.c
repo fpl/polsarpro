@@ -1,5 +1,5 @@
 /********************************************************************
-PolSARpro v5.0 is free software; you can redistribute it and/or 
+PolSARpro v6.0.4 is free software; you can redistribute it and/or 
 modify it under the terms of the GNU General Public License as 
 published by the Free Software Foundation; either version 2 (1991) of
 the License, or any later version. This program is distributed in the
@@ -16,7 +16,7 @@ Project  : ESA_POLSARPRO
 Authors  : Laurent FERRO-FAMIL
 Version  : 1.0
 Creation : 12/2006
-Update  :
+Update   :
 *--------------------------------------------------------------------
 INSTITUT D'ELECTRONIQUE et de TELECOMMUNICATIONS de RENNES (I.E.T.R)
 UMR CNRS 6164
@@ -72,7 +72,7 @@ int nearest_class(float *prm_vec,float **mean_prm,int nb_prm,int nb_class,int *c
 Routine  : main
 Authors  : Laurent FERRO-FAMIL
 Creation : 12/2006
-Update  :
+Update   :
 *--------------------------------------------------------------------
 Inputs arguments :
 argc : nb of input arguments
