@@ -1,4 +1,4 @@
-Mirror of POLSARPRO V6.0.3 (BIOMASS EDITION) for Linux
+Mirror of POLSARPRO V6.0.4 (BIOMASS EDITION) for Linux
 ======================================================
 
 This repository is a mirror of the PolSARPro software, eventually
